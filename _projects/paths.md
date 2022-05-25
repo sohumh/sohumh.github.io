@@ -1,7 +1,7 @@
 ---
 layout: page
-title: marriage paths
-description: match the people by forming words
+title: Marriage paths
+description: Match the people by forming words
 img: assets/img/paths.png
 importance: 1
 category: word puzzles

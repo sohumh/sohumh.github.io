@@ -1,9 +1,10 @@
 ---
 layout: page
-title: forgotten letters
-description: add the letters to the scrabble grid
-img: assets/img/forgotten_letters.png
-importance: 3
+title: Marble's voyage
+description: Spell a word as a marble ricochets off letter-lined walls
+img: assets/img/marbles.png
+redirect: /assets/pdf/paths_puzzles.pdf
+importance: 4
 category: word puzzles
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: page
-title: scrambled ladders
-description: turn the top word into the bottom
+title: Scrambled ladders
+description: Turn the top word into the bottom
 img: assets/img/ladders.png
 importance: 2
 category: word puzzles

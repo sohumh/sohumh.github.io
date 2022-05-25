@@ -1,10 +1,10 @@
 ---
 layout: page
-title: puzzles
+title: creativity
 permalink: /projects/
-description: A growing collection of the puzzles that rack my brain.
+description: A growing collection of the puzzles that rack my brain and the games that I create to inspire.
 nav: true
-display_categories: [word puzzles, word riddles, cooperative games, game night, car games]
+display_categories: [word puzzles, game nights, cooperative games, game night, car games]
 horizontal: false
 ---
 
