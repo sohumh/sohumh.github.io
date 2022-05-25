@@ -1,10 +1,10 @@
 ---
 layout: page
-title: projects
+title: puzzles
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: A growing collection of the puzzles that rack my brain.
 nav: true
-display_categories: [work, fun]
+display_categories: [word puzzles, word riddles, cooperative games, game night, car games]
 horizontal: false
 ---
 

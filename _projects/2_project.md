@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
-img: assets/img/3.jpg
+title: scrambled ladders
+description: turn the top word into the bottom
+img: assets/img/ladders.png
 importance: 2
-category: work
+category: word puzzles
 ---
 
 Every project has a beautiful feature showcase page.

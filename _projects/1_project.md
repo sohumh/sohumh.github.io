@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
-importance: 1
-category: work
+title: marble's voyage
+description: spell a word as a marble ricochets off letter-lined walls
+img: assets/img/marbles.png
+redirect: /assets/pdf/paths_puzzles.pdf
+importance: 4
+category: word puzzles
 ---
 
 Every project has a beautiful feature showcase page.

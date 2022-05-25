@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://linkedin.com/in/sohum-hulyalkar'>linkedin</a> | sohum11@berkeley.edu
+# subtitle: sohum11@berkeley.edu
 
 profile:
   align: right
