@@ -14,7 +14,8 @@ Finally, the arithmetic operations consist of:
 - division (must divide cleanly)
 - addition
 - subtraction
-and each arithmetic operation must be applied to the woman, e.g. `operation_two(operation_one(woman, num_one), num_two)`. 
+
+Each arithmetic operation must be applied to the woman, e.g. `operation_two(operation_one(woman, num_one), num_two)`. 
 
 Admittedly, this may appear a bit confusing, so let's see an example! Suppose we have the women, men, and numbers below:
 ```python
