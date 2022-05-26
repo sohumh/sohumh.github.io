@@ -5,7 +5,7 @@ description: Spell a word as a marble ricochets off letter-lined walls
 img: assets/img/marbles.png
 redirect: /assets/pdf/paths_puzzles.pdf
 importance: 4
-category: word puzzles
+category: puzzles
 ---
 
 Every project has a beautiful feature showcase page.

@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Marriage paths
+title: Snaking Paths
 description: Match the people by forming words
 img: assets/img/paths.png
 importance: 1
-category: word puzzles
+category: puzzles
 ---
 
 Fill in the empty letters such that words read horizontally 

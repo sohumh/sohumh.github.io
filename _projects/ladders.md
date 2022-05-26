@@ -4,7 +4,7 @@ title: Scrambled ladders
 description: Turn the top word into the bottom
 img: assets/img/ladders.png
 importance: 2
-category: word puzzles
+category: puzzles
 ---
 
 Every project has a beautiful feature showcase page.

@@ -4,7 +4,7 @@ title: Forgotten letters
 description: Add the letters to the scrabble grid
 img: assets/img/forgotten_letters.png
 importance: 3
-category: word puzzles
+category: puzzles
 ---
 
 Every project has a beautiful feature showcase page.
