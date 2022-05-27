@@ -7,13 +7,13 @@ importance: 5
 category: puzzles
 ---
 
-Each puzzle consists of a list of `women`, `men`, and `numbers`, where the `women` and `men` are numbers themselves. The goal is to apply arithmetic operations on `women` using numbers from `numbers` so that each woman is changed to be equal to one unique man. A number in `numbers` can be used at most once.
+Each puzzle consists of a list of `women`, `men`, and `numbers`, where the `women` and `men` are numbers themselves. The goal is to apply arithmetic operations on `women` using numbers from `numbers` so that each woman is changed to be equal to one unique man. A number in `numbers` can be used only once.
 
 Finally, the arithmetic operations consist of:
-- multiplication
-- division (must divide cleanly)
 - addition
 - subtraction
+- multiplication
+- division (must divide cleanly)
 
 Each arithmetic operation must be applied to the woman, e.g. `operation_two(operation_one(woman, num_one), num_two)`. 
 
@@ -32,16 +32,16 @@ woman 22 matched with man 20: 22 - 2
 ```
 
 Observe that:
-- Each number in `numbers` is used at most once. Most solutions will require all to be used, but some may not! Notice that the numbers `4`, `2`, `5`, `4`, `5` are used for exactly one woman above.
+- Each number in `numbers` is used at most once, e.g. the only time the `2` is used is in the operation `22 - 2`. Most solutions will require all to be used, but some may not!
 - Each woman is matched to a unique man who doesn't necessarily appear at the same index as her. 
 
-Without further ado, here are some challenges. Grab some paper and a pencil and enjoy! Note that each puzzle only has one solution.
+Without further ado, here are some challenges. Grab some paper and a pencil and enjoy! Each puzzle was created [programmatically](https://github.com/sohumh/mathy-marriage), and is ensured to only have one solution!
 
 **Puzzle Difficulties:**
 * TOC
 {:toc}
 ---
-## Easy
+## Mild
 **Two Pairs, Three Numbers**
 
 ---
@@ -432,7 +432,7 @@ woman 18 matched with man 23: 18 + 5
 ---
 
 
-## Hard
+## Hot
 **Three Pairs, Five Numbers**
 
 ---
@@ -637,7 +637,7 @@ woman 7 matched with man 2: (7 - 1) / 3
 </details>
 ---
 
-## Harder
+## Habanero
 **Four Pairs, Six Numbers**
 
 ---

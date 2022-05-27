@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-# subtitle: sohum11@berkeley.edu
+subtitle: sohum11@berkeley.edu
 
 profile:
   align: right
