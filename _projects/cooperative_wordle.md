@@ -7,9 +7,10 @@ importance: 2
 category: cooperative games
 ---
 
-**Overview:** This is a two player game where each partner will be given a word that only they know, and each player’s objective is to **guess their partner’s word** while minimizing the total number of **shared guesses**.
+**Objective:** Each player’s objective is to **guess their partner’s word** while minimizing the total number of **shared guesses**.
 
 **Gameplay:**
+- This is a two player game where each partner will be given a word that only they know and they must guess their partner’s word.
 - Each “round”, partners will **alternate** adding letters to create a valid 5 letter word, let’s call this the **shared guess**. After the shared guess is formed, each partner will reveal which letters are green or yellow for their word. 
     - Players should alternate starting each round, with the youngest player starting first.
     - The catch is a player cannot contribute a letter in their own word unless there are no possible words that exist. Maybe create a convention to communicate information around this…
@@ -19,7 +20,8 @@ category: cooperative games
 - We recommend putting your word into [mywordle.me](mywordle.me) and sending your partner a link! 
 - If you are stuck trying to think of a five letter word starting with a given prefix, you may go to the website [tinyurl.com/prefixhelper](tinyurl.com/prefixhelper) to find all five letter words of a given prefix!
     - If you do choose to use the site above, your convention cannot leverage its information
+- As with most cooperative games, come up with a convention, i.e. a strategy the team players follow, before playing.
 
-**[Our Strategy](https://docs.google.com/presentation/d/14nZ53WbsbPcRj9emxFg3kOhI8_yTAricUxhebNfphk0/edit#slide=id.g11514a71d20_0_11)**
-- Please create your own strategy before looking at ours!
-- Also, note that ours isn't "optimal" by any means.
+**[Our Convention](https://docs.google.com/presentation/d/14nZ53WbsbPcRj9emxFg3kOhI8_yTAricUxhebNfphk0/edit#slide=id.g11514a71d20_0_11)**
+- Please create your own convention before looking at ours!
+- Also note that ours isn't "optimal" by any means.

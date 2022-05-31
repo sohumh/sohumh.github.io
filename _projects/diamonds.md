@@ -25,6 +25,7 @@ category: cooperative games
 - Upon playing or discarding, take a card from the draw pile.
 - After the draw pile finishes, each player gets **2 turns**. 
 - Your final score is the number of correctly placed cards, giving a max score of **13**.
+- As with most cooperative games, come up with a convention, i.e. a strategy the team players follow, before playing.
 
 
 

@@ -22,5 +22,6 @@ category: cooperative games
         - Players should meet beforehand to give meaning to each hint, e.g. “plus_one” could mean “the current value of base is 1 bigger than some player’s value”
     - **Point** to someone
 - There are **two rounds** of gameplay, after which the game ends.
-- Note that you can only guess your number on your turn, so earlier players may not be able to go twice…
+- Note that you can only guess your number on your turn, so earlier players may not be able to go twice.
+- As with most cooperative games, come up with a convention, i.e. a strategy the team players follow, before playing.
 
