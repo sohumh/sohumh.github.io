@@ -564,7 +564,6 @@
     padding-top: 0.25rem;
   }
 
-
   .grid-container {
     display: grid;
     grid-template-columns: auto auto auto auto auto;
@@ -586,10 +585,35 @@
     border: 1px solid;
     // left: 50%;
     // right: 50%;
-    background-color: --global-theme-color;
+    // background-color: var(--global-divider-color);
     // line-height: 36px;
-    // font-size: 1.0rem;
+    font-size: 1.5rem;
     // letter-spacing: 2.9px;
     text-align: center;
     padding: 10px;
+  }
+
+  .grid-item-person {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .red-background {
+    background-color: var(--global-gridcell-red);
+  }
+  .yellow-background {
+    background-color: var(--global-gridcell-yellow);
+  }
+  .blue-background {
+    background-color: var(--global-gridcell-blue);
+  }
+  .green-background {
+    background-color: var(--global-gridcell-green);
+  }
+  .purple-background {
+    background-color: var(--global-gridcell-purple);
+  }
+  .orange-background {
+    background-color: var(--global-gridcell-orange);
   }

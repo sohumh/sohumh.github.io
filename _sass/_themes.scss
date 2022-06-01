@@ -14,6 +14,12 @@
   --global-footer-link-color: #{$white-color};
   --global-distill-app-color: #{$grey-color};
   --global-divider-color: rgba(0,0,0,.1);
+  --global-gridcell-red: #feacab;
+  --global-gridcell-blue: #ADD8E6;
+  --global-gridcell-yellow: #fdf6ab;
+  --global-gridcell-green: #bfefbf;
+  --global-gridcell-purple: #d9b9fa;
+  --global-gridcell-orange: #FFD580;
 
   .fa-sun {
     display : none;
@@ -37,7 +43,13 @@ html[data-theme='dark'] {
   --global-footer-link-color: #{$black-color};
   --global-distill-app-color: #{$grey-color-light};
   --global-divider-color: #424246;
-
+  --global-gridcell-red: #f25448;
+  --global-gridcell-blue: #0069A2;
+  --global-gridcell-yellow: #F7C445;
+  --global-gridcell-green: #66B761;
+  --global-gridcell-purple: #4A22BB;
+  --global-gridcell-orange: #F88C00;
+  
   .fa-sun {
     padding-left: 10px;
     padding-top: 12px;
