@@ -79,3 +79,12 @@ Here's the code for the last row of images above:
 </div>
 ```
 {% endraw %}
+
+
+<!-- > [PDF](/assets/pdf/paths_puzzles.pdf)
+
+<object data="/assets/pdf/paths_puzzles.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="/assets/pdf/paths_puzzles.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/paths_puzzles.pdf">Download PDF</a>.</p>
+    </embed>
+</object> -->

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Scrambled ladders
-description: Turn the top word into the bottom
-img: assets/img/ladders2.png
+title: Ladders
+description: Turn the top word into the bottom by changing a letter a time
+img: assets/img/ladders3.png
 importance: 2
 category: puzzles
 ---

@@ -20,6 +20,8 @@
   --global-gridcell-green: #bfefbf;
   --global-gridcell-purple: #d9b9fa;
   --global-gridcell-orange: #FFD580;
+  --global-gridcell-brown: #C09B76;
+  --global-gridcell-gray: #D9D9D9;
 
   .fa-sun {
     display : none;
@@ -49,7 +51,9 @@ html[data-theme='dark'] {
   --global-gridcell-green: #66B761;
   --global-gridcell-purple: #4A22BB;
   --global-gridcell-orange: #F88C00;
-  
+  --global-gridcell-brown: #502d00;
+  --global-gridcell-gray: #555555;
+
   .fa-sun {
     padding-left: 10px;
     padding-top: 12px;
