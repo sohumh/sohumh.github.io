@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Diamonds
-description: A grid based adaptation of hanabi.
+description: An adaptation of hanabi where players place cards on a diamond shaped grid
 # img: assets/img/escaperoom.png
-importance: 2
+importance: 4
 category: cooperative games
 ---
 

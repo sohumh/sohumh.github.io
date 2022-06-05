@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Shared Letters
-description: Form words with your letters to share information.
+description: Form words with your letters to share information
 # img: assets/img/escaperoom.png
-importance: 5
+importance: 6
 category: cooperative games
 ---
 **Objective:** Find the shared letters while *minimizing* the total number of words spoken by either player. 

@@ -1,9 +1,9 @@
 ---
 layout: page
 title: Find Your Number
-description: Creatively build a math sequence to share information
+description: Arithmetically build a math sequence to share information
 # img: assets/img/escaperoom.png
-importance: 4
+importance: 3
 category: cooperative games
 ---
 **Objective:** The goal is for every player to determine their number.

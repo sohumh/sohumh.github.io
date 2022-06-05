@@ -2,81 +2,487 @@
 layout: page
 title: Forgotten letters
 description: Add the letters to the scrabble grid
-img: assets/img/forgotten_letters.png
+img: assets/img/forgotten2.png
 importance: 3
 category: puzzles
 ---
 
-**WORK IN PROGRESS**
+Place the forgotten letters into the 5x5 grid in a valid bananagrams/scrabble formation while minimizing the number of needed **swaps**. A "swap" swaps two elements on the grid——2 letters or a letter and a space. Note that the swaps should be performed prior to the insertion of the forgotten letters.
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Each puzzle comes with two terms:
+1. The *maximum* number of swaps needed in the optimal solution
+2. A list of forgotten letters
+Each puzzle may have multiple solutions, though just one is given. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+Finally, all words involved in this puzzle are common——none of those obscure 2 letter scrabble words.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+---
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+**Puzzle 1:**
+### 1 swaps
+### letters: **a**, **t**
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+<div class="grid-container" id="searchtext">
+<div class="grid-item2"><div contenteditable>t</div></div>
+<div class="grid-item2"><div contenteditable>w</div></div>
+<div class="grid-item2"><div contenteditable>i</div></div>
+<div class="grid-item2"><div contenteditable>n</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>i</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2"><div contenteditable>l</div></div>
+<div class="grid-item2"><div contenteditable>o</div></div>
+<div class="grid-item2"><div contenteditable>t</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>t</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>h</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 </div>
 
+<details>
+<summary>
+Solution:
+</summary>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">t</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">&#8192;</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">a</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 green-background">s</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 green-background">t</div>
 </div>
-```
-{% endraw %}
+</details>
+---
+
+**Puzzle 2:**
+### 1 swaps
+### letters: **h**
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2"><div contenteditable>m</div></div>
+<div class="grid-item2"><div contenteditable>b</div></div>
+<div class="grid-item2"><div contenteditable>l</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>n</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>d</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>c</div></div>
+<div class="grid-item2"><div contenteditable>o</div></div>
+<div class="grid-item2"><div contenteditable>y</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2"><div contenteditable>w</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>t</div></div>
+</div>
+
+<details>
+<summary>
+Solution:
+</summary>
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">a</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">y</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">w</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 green-background">h</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">t</div>
+</div>
+</details>
+---
+
+**Puzzle 3:**
+### 0 swaps
+### letters: **s**, **k**, **i**, **n**
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>l</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>g</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>o</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>v</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2"><div contenteditable>u</div></div>
+<div class="grid-item2"><div contenteditable>p</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>r</div></div>
+</div>
+
+<details>
+<summary>
+Solution:
+</summary>
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">s</div>
+<div class="grid-item2 green-background">i</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 green-background">k</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">n</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">r</div>
+</div>
+</details>
+---
+
+**Puzzle 4:**
+### 1 swaps
+### letters: **e**, **t**
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>w</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>d</div></div>
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2"><div contenteditable>r</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2"><div contenteditable>m</div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2"><div contenteditable>p</div></div>
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2"><div contenteditable>r</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>l</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+</div>
+
+<details>
+<summary>
+Solution:
+</summary>
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">p</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 green-background">t</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">&#8192;</div>
+</div>
+</details>
+---
+
+**Puzzle 5:**
+### 2 swaps
+### letters: **z**
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2"><div contenteditable>q</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>p</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>u</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>w</div></div>
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2"><div contenteditable>y</div></div>
+<div class="grid-item2"><div contenteditable>i</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>t</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>t</div></div>
+<div class="grid-item2"><div contenteditable>i</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>s</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+</div>
+
+<details>
+<summary>
+Solution:
+</summary>
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">q</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">y</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">z</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 green-background">p</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">t</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+</div>
+</details>
+---
+
+**Puzzle 6:**
+### 0 swaps
+### letters: **e**, **w**, **h**, **i**, **t**, **e**
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>b</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>g</div></div>
+<div class="grid-item2"><div contenteditable>o</div></div>
+<div class="grid-item2"><div contenteditable>l</div></div>
+<div class="grid-item2"><div contenteditable>d</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>u</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>g</div></div>
+<div class="grid-item2"><div contenteditable>r</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>e</div></div>
+<div class="grid-item2"><div contenteditable>n</div></div>
+</div>
+
+<details>
+<summary>
+Solution:
+</summary>
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">t</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">w</div>
+<div class="grid-item2 green-background">h</div>
+<div class="grid-item2 green-background">i</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 green-background">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">e</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">n</div>
+</div>
+</details>
+---
+
+**Puzzle 7:**
+### 1 swaps
+### letters: **m**, **y**
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>b</div></div>
+<div class="grid-item2"><div contenteditable>a</div></div>
+<div class="grid-item2"><div contenteditable>r</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>h</div></div>
+<div class="grid-item2"><div contenteditable>i</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>p</div></div>
+<div class="grid-item2"><div contenteditable>i</div></div>
+<div class="grid-item2"><div contenteditable>n</div></div>
+<div class="grid-item2"><div contenteditable>t</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2"><div contenteditable>d</div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+</div>
+
+<details>
+<summary>
+Solution:
+</summary>
+
+<div class="grid-container" id="searchtext">
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 green-background">p</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2 green-background">m</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 green-background">y</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+<div class="grid-item2">&#8192;</div>
+</div>
+</details>
+---
