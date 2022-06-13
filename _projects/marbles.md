@@ -3,7 +3,7 @@ layout: page
 title: Marble's voyage
 description: Spell a word as a marble ricochets off letter-lined walls
 img: assets/img/marbles.png
-redirect: /assets/pdf/paths_puzzles.pdf
+redirect: /assets/pdf/marbles.pdf
 importance: 4
 category: puzzles
 ---
