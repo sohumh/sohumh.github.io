@@ -11,7 +11,7 @@ Fill in the empty letters such that words read horizontally
 and the path each 🤵 takes to his matching 💃 spells
 a word. Each guy can move in any bordering/diagonally bordering cell, and takes a path of 5 letters. Note, however, that every guy starts at the square right below them, and ends at the square right above their matching girl.
 
-All empty, grayed squares will be traversed by a guy, and some grayed squares are filled in for more difficult levels.
+All empty, grayed squares will be traversed by a guy, and some grayed squares are filled in for more difficult levels. There are a total of 30 puzzles--10 for each difficulty level. Some puzzles may have multiple solutions, and all the words used are common.
 
 **Puzzle Difficulties:**
 * TOC
@@ -22,40 +22,40 @@ All empty, grayed squares will be traversed by a guy, and some grayed squares ar
 
 **Puzzle 1:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item2">f</div>
+<div class="grid-item"></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">u</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">d</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">y</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">t</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">v</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">p</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">p</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">y</div>
 <div class="grid-item2">o</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2">l</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
 
@@ -65,83 +65,83 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item2">f</div>
-<div class="grid-item2 red-background">l</div>
+<div class="grid-item"></div>
+<div class="grid-item2 red-background">s</div>
 <div class="grid-item2">u</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">d</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">y</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2">e</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">d</div>
-<div class="grid-item2 red-background">i</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 red-background">o</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">t</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 red-background">n</div>
+<div class="grid-item2">v</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
 <div class="grid-item2 red-background">r</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">y</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">l</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
 </div>
-Words: <code>liner</code>
+Words: <code>store</code>
 
 </details>
 ---
 
 **Puzzle 2:**
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">f</div>
 <div class="grid-item2">i</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">c</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">h</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2">o</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
 
@@ -151,43 +151,43 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 red-background">b</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2">i</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">g</div>
 <div class="grid-item2">h</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 red-background">a</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2">o</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">t</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 </div>
-Words: <code>bares</code>
+Words: <code>geese</code>
 
 </details>
 ---
@@ -199,30 +199,30 @@ Words: <code>bares</code>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">a</div>
 <div class="grid-item2">w</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">e</div>
+<div class="grid-item2">k</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2">v</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">e</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
@@ -242,30 +242,30 @@ Solution:
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 red-background">h</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 red-background">a</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">a</div>
 <div class="grid-item2">w</div>
-<div class="grid-item2 red-background">l</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">e</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">k</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2">v</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">e</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2 red-background">k</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2 red-background">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
@@ -273,7 +273,7 @@ Solution:
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 </div>
-Words: <code>halos</code>
+Words: <code>seeks</code>
 
 </details>
 ---
@@ -281,33 +281,33 @@ Words: <code>halos</code>
 **Puzzle 4:**
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">s</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
 <div class="grid-item2">w</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">s</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">m</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">a</div>
+<div class="grid-item2">n</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2">g</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item"></div>
@@ -324,42 +324,42 @@ Solution:
 
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">t</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 red-background">a</div>
 <div class="grid-item2">w</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">s</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">m</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">o</div>
 <div class="grid-item2">n</div>
+<div class="grid-item2 red-background">g</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2">g</div>
-<div class="grid-item2 red-background">s</div>
+<div class="grid-item2 red-background">e</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 </div>
-Words: <code>tress</code>
+Words: <code>agree</code>
 
 </details>
 ---
@@ -367,39 +367,39 @@ Words: <code>tress</code>
 **Puzzle 5:**
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">e</div>
 <div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">u</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">c</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2">a</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">w</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">d</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">g</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2">u</div>
-<div class="grid-item2">i</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
-<div class="grid-item"></div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
 
@@ -410,42 +410,42 @@ Solution:
 
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 red-background">y</div>
-<div class="grid-item2">p</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2">p</div>
 <div class="grid-item2 red-background">o</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 red-background">u</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">g</div>
 <div class="grid-item2">u</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 red-background">h</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 red-background">r</div>
 <div class="grid-item2">e</div>
-<div class="grid-item"></div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>yours</code>
+Words: <code>other</code>
 
 </details>
 ---
@@ -454,39 +454,39 @@ Words: <code>yours</code>
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">u</div>
 <div class="grid-item2">f</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2">s</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">c</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">r</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">i</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">t</div>
 <div class="grid-item2">b</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -497,41 +497,41 @@ Solution:
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">f</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 red-background">d</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 red-background">o</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 red-background">v</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">b</div>
+<div class="grid-item2">o</div>
 <div class="grid-item2 red-background">s</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 red-background">o</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>doves</code>
+Words: <code>stole</code>
 
 </details>
 ---
@@ -540,39 +540,39 @@ Words: <code>doves</code>
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">a</div>
 <div class="grid-item2">u</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2">i</div>
-<div class="grid-item2">n</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item"></div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -583,41 +583,41 @@ Solution:
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 red-background">v</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2 red-background">i</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">a</div>
 <div class="grid-item2">u</div>
-<div class="grid-item2 red-background">n</div>
-<div class="grid-item2">t</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">i</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2">i</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2 red-background">n</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item"></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">y</div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
 </div>
-Words: <code>vines</code>
+Words: <code>rainy</code>
 
 </details>
 ---
@@ -629,36 +629,36 @@ Words: <code>vines</code>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item2">o</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">b</div>
 <div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">h</div>
+<div class="grid-item2">e</div>
 <div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">o</div>
 <div class="grid-item2">p</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">w</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2">c</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -672,78 +672,78 @@ Solution:
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item2">o</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">c</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">p</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2 red-background">a</div>
-<div class="grid-item2">w</div>
 <div class="grid-item2">n</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 red-background">f</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">o</div>
+<div class="grid-item2">b</div>
 <div class="grid-item2">a</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">o</div>
+<div class="grid-item2">o</div>
 <div class="grid-item2">k</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">c</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>cafes</code>
+Words: <code>allot</code>
 
 </details>
 ---
 
 **Puzzle 9:**
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2">g</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">y</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">z</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2">w</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
 
@@ -753,43 +753,43 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 red-background">b</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 red-background">l</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">a</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2">g</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2 red-background">t</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">z</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2">w</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 red-background">l</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 red-background">m</div>
+<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 </div>
-Words: <code>bloat</code>
+Words: <code>realm</code>
 
 </details>
 ---
@@ -797,39 +797,39 @@ Words: <code>bloat</code>
 **Puzzle 10:**
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">z</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">u</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item2">s</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">u</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">d</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">e</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
 
@@ -840,42 +840,42 @@ Solution:
 
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 red-background">a</div>
-<div class="grid-item2">z</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 red-background">s</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 red-background">c</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">d</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">h</div>
+<div class="grid-item2">u</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 red-background">i</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">d</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">e</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>erase</code>
+Words: <code>chill</code>
 
 </details>
 ---
@@ -886,40 +886,45 @@ Words: <code>erase</code>
 **Puzzle 1:**
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2">b</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">o</div>
 <div class="grid-item2">c</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 gray-background">r</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">k</div>
 <div class="grid-item2">r</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">b</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">v</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">u</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">d</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -929,87 +934,87 @@ Solution:
 
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2 blue-background">w</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">t</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">v</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">n</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">u</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 purple-background">t</div>
 <div class="grid-item2">i</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">h</div>
+<div class="grid-item2 blue-background">o</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 purple-background">r</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">n</div>
+<div class="grid-item2">k</div>
 <div class="grid-item2 blue-background">s</div>
-<div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 blue-background">o</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">d</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
 </div>
-Words: <code>rotor</code>, <code>swans</code>
+Words: <code>three</code>, <code>torso</code>
 
 </details>
 ---
 
 **Puzzle 2:**
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">n</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">k</div>
 <div class="grid-item2">g</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
+<div class="grid-item2">y</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2">u</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">n</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
 
@@ -1019,94 +1024,84 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2 blue-background">h</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 red-background">c</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 red-background">n</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">b</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 purple-background">e</div>
-<div class="grid-item2">d</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">n</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 blue-background">t</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">n</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 blue-background">r</div>
+<div class="grid-item2">y</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 purple-background">a</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2 blue-background">d</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">n</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>scene</code>, <code>haste</code>
+Words: <code>snarl</code>, <code>trade</code>
 
 </details>
 ---
 
 **Puzzle 3:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2">o</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background">n</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 </div>
 
 <details>
@@ -1115,89 +1110,89 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 red-background">f</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2 blue-background">l</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2 blue-background">m</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">w</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2 red-background">n</div>
-<div class="grid-item2 blue-background">g</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2 purple-background">i</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">l</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 red-background">c</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 purple-background">n</div>
 <div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2 red-background">s</div>
 <div class="grid-item2">h</div>
-<div class="grid-item2 purple-background">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2 blue-background">s</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 </div>
-Words: <code>fence</code>, <code>algae</code>
+Words: <code>rinse</code>, <code>mines</code>
 
 </details>
 ---
 
 **Puzzle 4:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item2">c</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">p</div>
 <div class="grid-item2">o</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">e</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">t</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background">s</div>
+<div class="grid-item2">q</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2">w</div>
 <div class="grid-item2">s</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">k</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">u</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -1206,43 +1201,48 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">p</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">r</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 blue-background">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 red-background">w</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">f</div>
+<div class="grid-item2 blue-background">w</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 red-background">e</div>
 <div class="grid-item2 blue-background">e</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 red-background">i</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">q</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 blue-background">a</div>
+<div class="grid-item2">w</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2 red-background">f</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 blue-background">t</div>
 <div class="grid-item2 red-background">t</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2 blue-background">r</div>
 <div class="grid-item2">k</div>
-<div class="grid-item2 blue-background">s</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 purple-background">s</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>swift</code>, <code>rests</code>
+Words: <code>rests</code>, <code>wears</code>
 
 </details>
 ---
@@ -1251,39 +1251,39 @@ Words: <code>swift</code>, <code>rests</code>
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
+<div class="grid-item"></div>
 <div class="grid-item2">g</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2">i</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
-<div class="grid-item2">e</div>
+<div class="grid-item2">o</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">t</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
 </div>
 
 <details>
@@ -1294,41 +1294,41 @@ Solution:
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">a</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2">s</div>
+<div class="grid-item"></div>
 <div class="grid-item2">g</div>
 <div class="grid-item2 red-background">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">a</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 blue-background">n</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2">i</div>
-<div class="grid-item2 red-background">n</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">r</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 purple-background">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 purple-background">e</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 blue-background">r</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2 blue-background">s</div>
+<div class="grid-item2 red-background">s</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
 </div>
-Words: <code>earns</code>, <code>tsars</code>
+Words: <code>rates</code>, <code>enter</code>
 
 </details>
 ---
@@ -1338,38 +1338,43 @@ Words: <code>earns</code>, <code>tsars</code>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">i</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">u</div>
 <div class="grid-item2">s</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 gray-background">s</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">h</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
 <div class="grid-item2">f</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">l</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -1381,78 +1386,83 @@ Solution:
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item2 red-background">s</div>
-<div class="grid-item2">i</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2 blue-background">k</div>
+<div class="grid-item2">u</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2 red-background">h</div>
-<div class="grid-item2">i</div>
+<div class="grid-item2 blue-background">h</div>
+<div class="grid-item2 red-background">t</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2 blue-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 blue-background">e</div>
-<div class="grid-item2">s</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 blue-background">a</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2 red-background">a</div>
-<div class="grid-item2 blue-background">p</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">l</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2">k</div>
 <div class="grid-item2 blue-background">s</div>
+<div class="grid-item2">n</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 red-background">g</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 blue-background">t</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 purple-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
 </div>
-Words: <code>shoal</code>, <code>keeps</code>
+Words: <code>stage</code>, <code>haste</code>
 
 </details>
 ---
 
 **Puzzle 7:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">a</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">o</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background">d</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">r</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">w</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">f</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">h</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">f</div>
-<div class="grid-item-person red-background">💃</div>
+<div class="grid-item2">p</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
@@ -1464,43 +1474,43 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item2 red-background">b</div>
+<div class="grid-item2 blue-background">u</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">c</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 blue-background">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2 blue-background">n</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 blue-background">d</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2 red-background">u</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2 blue-background">o</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 red-background">c</div>
+<div class="grid-item2 blue-background">u</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2">w</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2 purple-background">l</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">h</div>
 <div class="grid-item2 blue-background">e</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2">f</div>
-<div class="grid-item-person red-background">💃</div>
+<div class="grid-item2">p</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
-Words: <code>curls</code>, <code>stole</code>
+Words: <code>beach</code>, <code>undue</code>
 
 </details>
 ---
@@ -1509,44 +1519,39 @@ Words: <code>curls</code>, <code>stole</code>
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
 <div class="grid-item2">a</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">p</div>
 <div class="grid-item2">o</div>
 <div class="grid-item2">n</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background">v</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">l</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item"></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
 </div>
 
 <details>
@@ -1557,84 +1562,79 @@ Solution:
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 blue-background">d</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2 red-background">p</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 blue-background">e</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">p</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 purple-background">i</div>
 <div class="grid-item2">o</div>
 <div class="grid-item2">n</div>
-<div class="grid-item2 purple-background">d</div>
-<div class="grid-item2">s</div>
-<div class="grid-item"></div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 red-background">v</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 blue-background">t</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 blue-background">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
 </div>
-Words: <code>posed</code>, <code>stead</code>
+Words: <code>rivet</code>, <code>diets</code>
 
 </details>
 ---
 
 **Puzzle 9:**
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item"></div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">l</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">d</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">p</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2 gray-background">v</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">p</div>
 <div class="grid-item2">c</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">r</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
@@ -1646,89 +1646,84 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item2 red-background">t</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 blue-background">l</div>
-<div class="grid-item2 red-background">a</div>
+<div class="grid-item"></div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 blue-background">a</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 blue-background">w</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 red-background">i</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2 blue-background">i</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">o</div>
 <div class="grid-item2 blue-background">v</div>
 <div class="grid-item2">e</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2">s</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">p</div>
 <div class="grid-item2">c</div>
 <div class="grid-item2 red-background">l</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2 red-background">s</div>
 <div class="grid-item2">t</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">r</div>
 <div class="grid-item2 blue-background">s</div>
-<div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
 </div>
-Words: <code>tails</code>, <code>lavas</code>
+Words: <code>atoll</code>, <code>wives</code>
 
 </details>
 ---
 
 **Puzzle 10:**
 <div class="grid-container" id="searchtext">
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">s</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">o</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">k</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background">m</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 gray-background">i</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">l</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
-<div class="grid-item2">u</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person blue-background">💃</div>
 </div>
 
 <details>
@@ -1737,48 +1732,43 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 purple-background">l</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 purple-background">a</div>
-<div class="grid-item2">k</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">n</div>
 <div class="grid-item2 red-background">t</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 blue-background">i</div>
-<div class="grid-item2">m</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 blue-background">u</div>
+<div class="grid-item2">d</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 blue-background">n</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 red-background">m</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 blue-background">i</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">l</div>
 <div class="grid-item2 red-background">e</div>
 <div class="grid-item2">a</div>
-<div class="grid-item2 blue-background">r</div>
-<div class="grid-item2">s</div>
 <div class="grid-item2">p</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2">e</div>
+<div class="grid-item2 blue-background">t</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">d</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 blue-background">y</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person blue-background">💃</div>
 </div>
-Words: <code>later</code>, <code>lairs</code>
+Words: <code>tamed</code>, <code>unity</code>
 
 </details>
 ---
@@ -1788,44 +1778,39 @@ Words: <code>later</code>, <code>lairs</code>
 
 **Puzzle 1:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">y</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 gray-background">r</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">o</div>
-<div class="grid-item2">r</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2 gray-background">n</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">w</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background">o</div>
-<div class="grid-item2 gray-background">u</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 gray-background">s</div>
-<div class="grid-item2 gray-background">l</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 gray-background">m</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
 </div>
@@ -1836,99 +1821,89 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
-<div class="grid-item2 purple-background">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 yellow-background">s</div>
+<div class="grid-item"></div>
+<div class="grid-item2">h</div>
 <div class="grid-item2 red-background">o</div>
-<div class="grid-item2 blue-background">u</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2 red-background">i</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 blue-background">l</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2 blue-background">l</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 yellow-background">m</div>
+<div class="grid-item2 blue-background">b</div>
+<div class="grid-item2 yellow-background">b</div>
 <div class="grid-item2">y</div>
-<div class="grid-item2 blue-background">s</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 blue-background">r</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2 blue-background">i</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 yellow-background">r</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2 red-background">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 yellow-background">s</div>
-<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item2 blue-background">n</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 yellow-background">t</div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
 </div>
-Words: <code>poise</code>, <code>pulls</code>, <code>seems</code>
+Words: <code>oases</code>, <code>brine</code>, <code>beret</code>
 
 </details>
 ---
 
 **Puzzle 2:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 gray-background">p</div>
-<div class="grid-item2 gray-background">l</div>
-<div class="grid-item2 gray-background">a</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 gray-background">t</div>
-<div class="grid-item2">y</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">l</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 gray-background">l</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background">t</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2 gray-background">r</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">k</div>
-<div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item"></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item-person yellow-background">💃</div>
 </div>
 
 <details>
@@ -1937,53 +1912,48 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2 purple-background">s</div>
-<div class="grid-item2 yellow-background">h</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 red-background">p</div>
-<div class="grid-item2 blue-background">l</div>
-<div class="grid-item2 yellow-background">a</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2 orange-background">r</div>
-<div class="grid-item2 blue-background">a</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 orange-background">e</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2 yellow-background">s</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item2 red-background">c</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2 purple-background">e</div>
+<div class="grid-item2 green-background">a</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 red-background">o</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 green-background">l</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 blue-background">t</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2 blue-background">a</div>
+<div class="grid-item2 yellow-background">r</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">k</div>
-<div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item"></div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 blue-background">r</div>
+<div class="grid-item2 yellow-background">t</div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item-person yellow-background">💃</div>
 </div>
-Words: <code>spree</code>, <code>slate</code>, <code>hares</code>
+Words: <code>coats</code>, <code>altar</code>, <code>alert</code>
 
 </details>
 ---
@@ -1991,38 +1961,38 @@ Words: <code>spree</code>, <code>slate</code>, <code>hares</code>
 **Puzzle 3:**
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">i</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2">r</div>
+<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2 gray-background">w</div>
+<div class="grid-item2 gray-background">l</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background">d</div>
 <div class="grid-item2 gray-background">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background">r</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2">i</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">v</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">r</div>
-<div class="grid-item2">w</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background">s</div>
-<div class="grid-item2 gray-background">t</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item"></div>
@@ -2044,40 +2014,40 @@ Solution:
 
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 purple-background">t</div>
-<div class="grid-item2 yellow-background">a</div>
-<div class="grid-item2">i</div>
+<div class="grid-item"></div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 red-background">l</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 green-background">s</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 green-background">r</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">v</div>
+<div class="grid-item2 red-background">o</div>
+<div class="grid-item2 blue-background">w</div>
+<div class="grid-item2 yellow-background">l</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2 red-background">a</div>
 <div class="grid-item2">l</div>
-<div class="grid-item2 green-background">o</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">w</div>
+<div class="grid-item2 green-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2">a</div>
+<div class="grid-item2 orange-background">d</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2 orange-background">s</div>
 <div class="grid-item2 blue-background">t</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 orange-background">e</div>
-<div class="grid-item2 blue-background">s</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
@@ -2089,51 +2059,56 @@ Solution:
 <div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item"></div>
 </div>
-Words: <code>tease</code>, <code>trots</code>, <code>arose</code>
+Words: <code>loads</code>, <code>sweet</code>, <code>sleds</code>
 
 </details>
 ---
 
 **Puzzle 4:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">u</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">c</div>
-<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">b</div>
 <div class="grid-item2 gray-background">r</div>
-<div class="grid-item2 gray-background">n</div>
-<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">f</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">v</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 gray-background">s</div>
+<div class="grid-item2 gray-background">i</div>
+<div class="grid-item2">x</div>
+<div class="grid-item2 gray-background">t</div>
 <div class="grid-item2">h</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">t</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 gray-background">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">o</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
@@ -2144,48 +2119,53 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
-<div class="grid-item2 red-background">m</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item2 red-background">t</div>
+<div class="grid-item2 green-background">r</div>
 <div class="grid-item2">u</div>
-<div class="grid-item2 blue-background">t</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2 green-background">o</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2">f</div>
+<div class="grid-item2 purple-background">a</div>
+<div class="grid-item2">v</div>
+<div class="grid-item2 yellow-background">o</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 blue-background">s</div>
+<div class="grid-item2 red-background">i</div>
+<div class="grid-item2">x</div>
+<div class="grid-item2 yellow-background">t</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 purple-background">t</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2">e</div>
 <div class="grid-item2 yellow-background">s</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2 blue-background">r</div>
-<div class="grid-item2 yellow-background">n</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">w</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 green-background">i</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 purple-background">e</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 yellow-background">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 purple-background">d</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>mowed</code>, <code>tried</code>, <code>snipe</code>
+Words: <code>trait</code>, <code>roast</code>, <code>roots</code>
 
 </details>
 ---
@@ -2193,48 +2173,38 @@ Words: <code>mowed</code>, <code>tried</code>, <code>snipe</code>
 **Puzzle 5:**
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person yellow-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">u</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 gray-background">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 gray-background">o</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 gray-background">n</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2 gray-background">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">a</div>
+<div class="grid-item-person yellow-background">🤵</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">e</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background">c</div>
+<div class="grid-item2 gray-background">h</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2">x</div>
+<div class="grid-item2 gray-background">t</div>
+<div class="grid-item2 gray-background">r</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">s</div>
 <div class="grid-item-person red-background">💃</div>
-<div class="grid-item-person blue-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
+<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
@@ -2246,52 +2216,42 @@ Solution:
 
 <div class="grid-container" id="searchtext">
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person yellow-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">l</div>
-<div class="grid-item2 green-background">b</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 green-background">o</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2">f</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2 blue-background">o</div>
-<div class="grid-item2 yellow-background">r</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 red-background">n</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2 blue-background">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 orange-background">s</div>
+<div class="grid-item-person yellow-background">🤵</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">a</div>
 <div class="grid-item2 blue-background">t</div>
 <div class="grid-item2">e</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2 yellow-background">s</div>
+<div class="grid-item2 red-background">c</div>
+<div class="grid-item2 blue-background">h</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 yellow-background">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 red-background">h</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2 yellow-background">a</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2">x</div>
+<div class="grid-item2 yellow-background">t</div>
+<div class="grid-item2 blue-background">r</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2">s</div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 </div>
-Words: <code>loons</code>, <code>boost</code>, <code>bores</code>
+Words: <code>aches</code>, <code>there</code>, <code>slate</code>
 
 </details>
 ---
@@ -2300,44 +2260,44 @@ Words: <code>loons</code>, <code>boost</code>, <code>bores</code>
 <div class="grid-container" id="searchtext">
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2 gray-background">g</div>
-<div class="grid-item2 gray-background">a</div>
-<div class="grid-item2">z</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">b</div>
+<div class="grid-item2 gray-background">u</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2 gray-background">l</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background">n</div>
 <div class="grid-item2">d</div>
-<div class="grid-item2">o</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 gray-background">s</div>
+<div class="grid-item2">w</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2 gray-background">e</div>
 <div class="grid-item2">p</div>
+<div class="grid-item2">g</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">m</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -2348,86 +2308,91 @@ Solution:
 <div class="grid-container" id="searchtext">
 <div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item2 red-background">e</div>
+<div class="grid-item2 red-background">c</div>
 <div class="grid-item2 blue-background">a</div>
-<div class="grid-item2 yellow-background">t</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">n</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">r</div>
 <div class="grid-item2 blue-background">g</div>
-<div class="grid-item2 red-background">a</div>
-<div class="grid-item2">z</div>
-<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2 red-background">u</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 yellow-background">l</div>
 <div class="grid-item2">d</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 blue-background">i</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 blue-background">l</div>
+<div class="grid-item2">d</div>
+<div class="grid-item2 purple-background">r</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 yellow-background">v</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2 orange-background">n</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">p</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">w</div>
 <div class="grid-item2 blue-background">e</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2 orange-background">s</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 purple-background">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">m</div>
+<div class="grid-item2 yellow-background">s</div>
 <div class="grid-item"></div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>earns</code>, <code>agile</code>, <code>teens</code>
+Words: <code>curse</code>, <code>agree</code>, <code>elves</code>
 
 </details>
 ---
 
 **Puzzle 7:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 gray-background">h</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2 gray-background">r</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">a</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item2">l</div>
-<div class="grid-item2 gray-background">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 gray-background">p</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">y</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 gray-background">n</div>
+<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2 gray-background">w</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2">h</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">j</div>
+<div class="grid-item2">o</div>
+<div class="grid-item2 gray-background">k</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
 <div class="grid-item"></div>
-<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item"></div>
 </div>
 
@@ -2437,94 +2402,94 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2 red-background">c</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 red-background">s</div>
+<div class="grid-item2 green-background">t</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 red-background">n</div>
+<div class="grid-item2 blue-background">o</div>
+<div class="grid-item2 yellow-background">w</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 blue-background">k</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">j</div>
 <div class="grid-item2">o</div>
-<div class="grid-item2 blue-background">l</div>
+<div class="grid-item2 red-background">k</div>
+<div class="grid-item2 green-background">e</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2 blue-background">n</div>
 <div class="grid-item2 yellow-background">d</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2 red-background">h</div>
-<div class="grid-item2 blue-background">e</div>
-<div class="grid-item2 yellow-background">r</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">c</div>
-<div class="grid-item2 brown-background">a</div>
-<div class="grid-item2">n</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 blue-background">p</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2 orange-background">p</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">y</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">e</div>
-<div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item-person red-background">💃</div>
+<div class="grid-item-person blue-background">💃</div>
+<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item"></div>
 </div>
-Words: <code>chaps</code>, <code>leapt</code>, <code>drape</code>
+Words: <code>snake</code>, <code>token</code>, <code>tweed</code>
 
 </details>
 ---
 
 **Puzzle 8:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 gray-background">h</div>
-<div class="grid-item2 gray-background">i</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item2">t</div>
 <div class="grid-item2">r</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">b</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 gray-background">l</div>
+<div class="grid-item2">e</div>
 <div class="grid-item2 gray-background">r</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 gray-background">t</div>
 <div class="grid-item2">s</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">a</div>
+<div class="grid-item2">p</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 gray-background">u</div>
+<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background">s</div>
 <div class="grid-item2">e</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">s</div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person yellow-background">💃</div>
 </div>
 
 <details>
@@ -2533,94 +2498,104 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
-<div class="grid-item2 purple-background">s</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2 yellow-background">r</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 red-background">h</div>
-<div class="grid-item2 blue-background">i</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">s</div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item-person blue-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item2">t</div>
 <div class="grid-item2">r</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2 blue-background">l</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 yellow-background">s</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 green-background">t</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">g</div>
-<div class="grid-item2">a</div>
-<div class="grid-item2 red-background">t</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 green-background">c</div>
 <div class="grid-item2">e</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2">u</div>
+<div class="grid-item2 purple-background">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 yellow-background">r</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">p</div>
+<div class="grid-item2 purple-background">o</div>
+<div class="grid-item2">k</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">g</div>
+<div class="grid-item2 red-background">u</div>
+<div class="grid-item2">i</div>
 <div class="grid-item2 green-background">s</div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 red-background">d</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 yellow-background">t</div>
+<div class="grid-item2 blue-background">e</div>
+<div class="grid-item2">s</div>
 <div class="grid-item-person red-background">💃</div>
 <div class="grid-item"></div>
+<div class="grid-item-person yellow-background">💃</div>
 <div class="grid-item-person blue-background">💃</div>
 <div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item"></div>
-<div class="grid-item-person yellow-background">💃</div>
 </div>
-Words: <code>short</code>, <code>silts</code>, <code>rests</code>
+Words: <code>aloud</code>, <code>close</code>, <code>crest</code>
 
 </details>
 ---
 
 **Puzzle 9:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item-person yellow-background">🤵</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">c</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2 gray-background">r</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">h</div>
 <div class="grid-item2">e</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 gray-background">i</div>
-<div class="grid-item2 gray-background">d</div>
+<div class="grid-item2">l</div>
 <div class="grid-item2 gray-background">e</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">i</div>
+<div class="grid-item2 gray-background">a</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2">b</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">r</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 gray-background">o</div>
+<div class="grid-item2 gray-background">r</div>
+<div class="grid-item2 gray-background">p</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">e</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -2629,84 +2604,104 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">🤵</div>
-<div class="grid-item-person yellow-background">🤵</div>
 <div class="grid-item"></div>
-<div class="grid-item2 red-background">r</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 blue-background">d</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2">b</div>
-<div class="grid-item2 red-background">e</div>
-<div class="grid-item2 green-background">r</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2">h</div>
-<div class="grid-item2">h</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
+<div class="grid-item"></div>
+<div class="grid-item-person yellow-background">🤵</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 purple-background">h</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2 purple-background">a</div>
-<div class="grid-item2 yellow-background">r</div>
-<div class="grid-item2">d</div>
-<div class="grid-item2">p</div>
-<div class="grid-item2">r</div>
-<div class="grid-item2 blue-background">i</div>
-<div class="grid-item2 red-background">d</div>
+<div class="grid-item2 yellow-background">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 red-background">e</div>
+<div class="grid-item2 blue-background">a</div>
+<div class="grid-item2">s</div>
 <div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2">i</div>
-<div class="grid-item2 blue-background">n</div>
-<div class="grid-item2 yellow-background">d</div>
-<div class="grid-item2 red-background">s</div>
+<div class="grid-item2">b</div>
+<div class="grid-item2 blue-background">l</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2">r</div>
+<div class="grid-item2 yellow-background">e</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2 blue-background">o</div>
+<div class="grid-item2 red-background">r</div>
+<div class="grid-item2 yellow-background">p</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 brown-background">s</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">e</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
-<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>reads</code>, <code>drain</code>, <code>erred</code>
+Words: <code>hears</code>, <code>halos</code>, <code>seeps</code>
 
 </details>
 ---
 
 **Puzzle 10:**
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">h</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">v</div>
-<div class="grid-item2 gray-background">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 gray-background">e</div>
-<div class="grid-item2 gray-background">r</div>
-<div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">m</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 gray-background">l</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">v</div>
-<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
 <div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 gray-background">i</div>
+<div class="grid-item2 gray-background">p</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2 gray-background"><div contenteditable></div></div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 gray-background">e</div>
+<div class="grid-item2 gray-background">w</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
 <div class="grid-item2">e</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item2">m</div>
 <div class="grid-item2 gray-background"><div contenteditable></div></div>
-<div class="grid-item-person red-background">💃</div>
+<div class="grid-item2">s</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
 
 <details>
@@ -2715,43 +2710,49 @@ Solution:
 </summary>
 
 <div class="grid-container" id="searchtext">
-<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item"></div>
+<div class="grid-item"></div>
+<div class="grid-item-person red-background">🤵</div>
 <div class="grid-item-person blue-background">🤵</div>
 <div class="grid-item-person yellow-background">🤵</div>
-<div class="grid-item"></div>
-<div class="grid-item2 red-background">b</div>
-<div class="grid-item2">u</div>
-<div class="grid-item2 blue-background">t</div>
-<div class="grid-item2 yellow-background">t</div>
+<div class="grid-item2">h</div>
 <div class="grid-item2">e</div>
-<div class="grid-item2">v</div>
-<div class="grid-item2 red-background">o</div>
-<div class="grid-item2">t</div>
-<div class="grid-item2 blue-background">e</div>
-<div class="grid-item2 yellow-background">r</div>
-<div class="grid-item2 red-background">i</div>
-<div class="grid-item2">m</div>
-<div class="grid-item2 blue-background">p</div>
-<div class="grid-item2 yellow-background">e</div>
-<div class="grid-item2">l</div>
-<div class="grid-item2 red-background">l</div>
-<div class="grid-item2">o</div>
-<div class="grid-item2">v</div>
-<div class="grid-item2 green-background">e</div>
-<div class="grid-item2">s</div>
-<div class="grid-item2 red-background">s</div>
-<div class="grid-item2">e</div>
-<div class="grid-item2 blue-background">e</div>
-<div class="grid-item2">m</div>
+<div class="grid-item2 red-background">a</div>
+<div class="grid-item2 blue-background">r</div>
 <div class="grid-item2 yellow-background">s</div>
-<div class="grid-item-person red-background">💃</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2 purple-background">i</div>
+<div class="grid-item2 yellow-background">p</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">a</div>
+<div class="grid-item2 red-background">d</div>
+<div class="grid-item2 yellow-background">a</div>
+<div class="grid-item2 blue-background">p</div>
+<div class="grid-item2">t</div>
+<div class="grid-item2">c</div>
+<div class="grid-item2">h</div>
+<div class="grid-item2 purple-background">e</div>
+<div class="grid-item2 yellow-background">w</div>
+<div class="grid-item2">s</div>
+<div class="grid-item2">l</div>
+<div class="grid-item2">e</div>
+<div class="grid-item2 green-background">n</div>
+<div class="grid-item2 red-background">d</div>
+<div class="grid-item2">s</div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person blue-background">💃</div>
+<div class="grid-item-person red-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 <div class="grid-item"></div>
 <div class="grid-item-person yellow-background">💃</div>
+<div class="grid-item"></div>
+<div class="grid-item"></div>
 </div>
-Words: <code>boils</code>, <code>tepee</code>, <code>trees</code>
+Words: <code>aided</code>, <code>ripen</code>, <code>spawn</code>
 
 </details>
 ---
+
