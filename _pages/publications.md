@@ -3,7 +3,7 @@ layout: page
 permalink: /cs61b/
 title: cs61b
 description: A collection of some of the resources I’ve created over my time teaching CS 61B.
-years: [ADTs, Arrays, Asymptotics, Bits, Classes, Comparators, Disjoint Sets, Dynamic Method Selection, Graphs, Hashing, Heaps, Iterators, LLRBs, Linked Lists, MSTs, Shortest Paths, Sorting, Trees, Tries, Abstract Classes]
+years: [ADTs, Arrays, Asymptotics, Bits, Classes, Comparators, Disjoint Sets, Dynamic Method Selection, Graphs, Hashing, Heaps, Iterators, LLRBs, Linked Lists, MSTs, Shortest Paths, Sorting, Trees, Tries]
 nav: true
 ---
 First off, for those unfamiliar with 61B, it is *the* data structures and algorithms class at UC Berkeley. I had the privilege of TAing 61B from Spring 2020 to Spring 2022, and over the semesters, I created challenging problems and recorded intuitive videos.

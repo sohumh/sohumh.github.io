@@ -1242,7 +1242,9 @@ Solution:
 <div class="grid-item"></div>
 <div class="grid-item"></div>
 </div>
-Words: <code>rests</code>, <code>wears</code>
+Words: <code>rests</code>, <code>wears</code>;
+
+Alternate Solution:  <code>rests</code>,  <code>weans</code>
 
 </details>
 ---
