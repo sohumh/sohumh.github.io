@@ -33,5 +33,5 @@ category: competitive games
 - Feel free to change the categories between rounds, here are some that we recommend, though any broad category would work just fine.
     - Food, Animals, Cities, Sports, Celebrities, Hobbies, Professions, Countries, Attire, Companies, Restaurants
 
-## Scattergories Version
-- The scattergories version works very similarly to the above, but the handshake differs: 
+<!-- ## Scattergories Version
+- The scattergories version works very similarly to the above, but the handshake differs:  -->
