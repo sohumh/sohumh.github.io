@@ -2,8 +2,8 @@
 layout: page
 title: A Hat Riddle
 description: If you like hat riddles, you'll love this. 
-importance: 6
-category: riddles
+importance: 10
+category: standalone puzzles
 ---
 Before we dive in, this is a classic hat riddle I created. If you are unfamiliar with hat riddles or would like to try more, the hat puzzles on this [website](https://www.wikiwand.com/en/Induction_puzzles#/Basic_Hat_Puzzle) are fantastic.
 

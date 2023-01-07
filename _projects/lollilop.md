@@ -1,13 +1,14 @@
 ---
 layout: page
-title: Lollipop Puzzle
+title: Lollipop Crossword
 description: A crossword like puzzle with a serious twist. 
 importance: 4
-category: riddles
+img: assets/img/lollilop.png
+category: standalone puzzles
 ---
 I hope this puzzle will blow your mind when you figure out how the words can be connected. That's all, enjoy!
 
-- [PDF](/assets/pdf/lollilop.pdf)
+- [PDF](/assets/pdf/lollilop_improved.pdf)
 - [Solutions](/assets/pdf/lollilopsol.pdf)
 
 

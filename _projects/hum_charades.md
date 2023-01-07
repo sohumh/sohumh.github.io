@@ -71,3 +71,10 @@ category: competitive games
     3. Same step 3 as previous version.
 - To make it easier, a letter can be decided on before/after the categories are selected, and all words given must start with that letter.
     
+
+##### A Compound Word Variant
+- Here is another clever way of coming up with words. Each team will think of *any* compound word, e.g. `Starfish`, and give the first word to the one of the other team's actors, and the second word to another actor. Each word should be given *privately*, i.e. the actors don't know their partner's word. Note that each actor doesn't know if they have the first part of the compound word, or the second part. Then, the game of hum charades proceeds as normal! To spice this up, you can:
+    1. Think of multiple words, and give one part of each word to one member of another team. We played this with two teams of 4, and gave each member of the other team a word to act. This means that the acting teams will need to deduce what are the words. 
+        - For instance, if the words given to Alice, Bob, Charlie, and David are `List`, `Water`, `White`, and `Fall`, they must deduce that the two compound words are `Whitelist` and `Waterfall`. 
+        - Also note that in the case, the idle actors are guessing! One slight nuance here is that you shouldn't be able to guess the compound word containing your word until after you acted. Intuitively, if the person currently acting is conveying `Water`, and you have `Fall` and haven't acted yet, you shouldn't be allowed to guess `Waterfall`. 
+    2. Instead, of just using traditional compound words, feel free to extend it to words that happen to be compound words, e.g. `bandit` (`band` + `it`), or even more [non-traditional compound words](/creativity/compound_words/)! These are often much tougher to guess, and tons of fun to think of too!

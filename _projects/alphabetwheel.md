@@ -2,8 +2,9 @@
 layout: page
 title: Alphabet Wheel
 description: Finishing a sequence from a rarity in words.
-importance: 4
-category: riddles
+importance: 7
+img: assets/img/wheel.png
+category: standalone puzzles
 ---
 As it's fairly apparent to infer from this website, I enjoy word puzzles. On that line, it always intrigues me to explore interesting and rare properties in words. This puzzle not only identifies a fun property, but finishes a sequence using it. Enjoy!
 

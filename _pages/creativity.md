@@ -4,7 +4,7 @@ title: creativity
 permalink: /creativity/
 description: A growing collection of the puzzles that rack my brain and the games that I create to inspire.
 nav: true
-display_categories: [puzzles, game nights, riddles, cooperative games, competitive games]
+display_categories: [game nights, puzzles, standalone puzzles, cooperative games, competitive games, crosswords]
 horizontal: false
 ---
 
