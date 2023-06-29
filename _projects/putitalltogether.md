@@ -2,7 +2,7 @@
 layout: page
 title: Put It All Together
 description: A creative connection of tetris and unscrambling. 
-importance: 5
+importance: 6
 img: assets/img/together.png
 category: standalone puzzles
 ---
