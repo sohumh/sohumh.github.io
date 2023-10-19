@@ -2,7 +2,7 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://sohumh.github.io/" />        
+  <head>        
     <!-- Metadata, OpenGraph and Schema.org -->
     
 
@@ -10,9 +10,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Sohum  Hulyalkar | Page not found</title>
+    <title>Sohum  Hulyalkar | Keep And Kill</title>
     <meta name="author" content="Sohum  Hulyalkar" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="A two player word game with different goals for each player" />
 
 
     <!-- Bootstrap & MDB -->
@@ -30,7 +30,7 @@
     <!-- Styles -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔥</text></svg>">
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://sohumh.github.io/404.html">
+    <link rel="canonical" href="https://sohumh.github.io/creativity/keep_n_kill/">
 
     <!-- Dark Mode -->
     <script src="/assets/js/theme.js"></script>
@@ -92,12 +92,45 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">Keep And Kill</h1>
+            <p class="post-description">A two player word game with different goals for each player</p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://sohumh.github.io/">here</a>.</p>
+            <p><strong>Objective:</strong> The goal is for the guesser to say 4 words without the prompter stopping her.</p>
+
+<p><strong>Gameplay:</strong></p>
+<ol>
+  <li>One player becomes the <em>guesser</em> and the other player becomes the <em>prompter</em>.
+    <ul>
+      <li>Suppose Greta is the guesser and Shreya is the prompter.</li>
+    </ul>
+  </li>
+  <li>The guesser says any word that abides by the restrictions specified by the prompter. Note for the first word, there are no restrictions, so the guesser can say any word.
+    <ul>
+      <li>Greta says <code class="language-plaintext highlighter-rouge">ROOM</code>.</li>
+    </ul>
+  </li>
+  <li>Then, the prompter says <strong>one spot in the word to kill</strong> and <strong>another spot in the word to keep</strong>. The letter at the spot to kill cannot be the current in all subsequent words, and the letter at the spot to keep must stay the same in all subsquent words.
+    <ul>
+      <li>Shreya says to kill <code class="language-plaintext highlighter-rouge">position 3 (i.e. the second O)</code>, and keep <code class="language-plaintext highlighter-rouge">position 4 (i.e. the M)</code>. This means that the third letter in all subsquent words cannot be an <code class="language-plaintext highlighter-rouge">O</code>, and the last letter in all subsequent words must be an <code class="language-plaintext highlighter-rouge">M</code>.</li>
+    </ul>
+  </li>
+  <li>Steps 2 and 3 repeat until either the guesser says 4 words or is unable to say a word that meets all the restrictions.
+    <ul>
+      <li>To finish the example game, suppose Greta says <code class="language-plaintext highlighter-rouge">WORM</code> as her next word. Notice that this abides by the restrictions given so far since the last letter is <code class="language-plaintext highlighter-rouge">M</code>, and the letter at the third position is not an <code class="language-plaintext highlighter-rouge">O</code>.</li>
+      <li>Then, Shreya decides to keep the <code class="language-plaintext highlighter-rouge">W</code> and kill the <code class="language-plaintext highlighter-rouge">R</code>.
+        <ul>
+          <li>When there are no duplicate letters, it’s quicker to say to kill/keep a given letter rather than a keep/kill position, i.e. say “Keep the R” vs “Keep the letter at position 3”, but the meaning of the two are the same.</li>
+        </ul>
+      </li>
+      <li>Greta says <code class="language-plaintext highlighter-rouge">WHIM</code> which doesn’t have an R or an O in the third position (notice that restrictions accumulate!) and starts with a W and ends with an M.</li>
+      <li>Shreya decides to keep the <code class="language-plaintext highlighter-rouge">I</code> and kill the <code class="language-plaintext highlighter-rouge">H</code>.</li>
+      <li>Greta is unable to think of a word that starts with a W and ends with an I and M that doesn’t have an H in the second spot, and accordingly loses.</li>
+    </ul>
+  </li>
+</ol>
+
 
           </article>
 
