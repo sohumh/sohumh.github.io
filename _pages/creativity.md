@@ -2,7 +2,7 @@
 layout: page
 title: creativity
 permalink: /creativity/
-description: A growing collection of the puzzles that rack my brain and the games that I create to inspire.
+description: A growing collection of the puzzles that rack my brain and the games that I create to inspire. Follow @thewordpuzzler on instagram for more!
 nav: true
 display_categories: [game nights, puzzles, standalone puzzles, cooperative games, competitive games, crosswords]
 horizontal: false
