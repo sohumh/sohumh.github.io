@@ -332,7 +332,7 @@ For more details on how to create distill-styled posts using `<d-*>` tags, pleas
 
 #### Photos
 
-Photo formatting is made simple using [Bootstrap's grid system](https://getbootstrap.com/docs/4.4/layout/grid/).
+photo formatting is made simple using [Bootstrap's grid system](https://getbootstrap.com/docs/4.4/layout/grid/).
 Easily create beautiful grids within your blog posts and project pages:
 
 <p align="center">
