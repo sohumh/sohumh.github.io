@@ -11,138 +11,116 @@ In the following variation of rush hour, the cars are words. Any time a car fini
 words. Cars can only move forwards or backwards in the direction they are facing, and can move many spaces at once.
 
 
+<!DOCTYPE html>
 <html>
 <head>
    <title>Word Rush Hour</title>
    <style>
-#all-games-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 20px;
-    /* Remove max-width and margin: 0 auto */
-}
+       #all-games-container {
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+           padding: 20px;
+       }
 
-.game-instance {
-    margin-left: 20px;
-    border: none;  /* Remove any border */
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #f8f8f8;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    outline: none;  /* Add this to remove the focus outline */
-}
+       .game-instance {
+           margin-left: 20px;
+           border: none;
+           padding: 20px;
+           border-radius: 8px;
+           background-color: #f8f8f8;
+           box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+           outline: none;
+       }
 
-.game-instance h3 {
-   margin: 0 0 15px 0;
-   font-size: 24px;
-   color: #333;
-}
+       .game-instance h3 {
+           margin: 0 0 15px 0;
+           font-size: 24px;
+           color: #333;
+       }
 
-.game-instance:not(:last-child)::after {
-   content: '';
-   display: block;
-   height: 1px;
-   background: linear-gradient(to right, transparent, #ccc, transparent);
-   margin-top: 20px;
-}
+       .game-instance:not(:last-child)::after {
+           content: '';
+           display: block;
+           height: 1px;
+           background: linear-gradient(to right, transparent, #ccc, transparent);
+           margin-top: 20px;
+       }
 
-.game-board {
-   display: grid;
-   grid-template-columns: repeat(6, 50px);
-   gap: 2px;
-   padding: 10px;
-   background-color: #ccc;
-   width: fit-content;
-   border: 2px solid #333;
-}
+       .game-board {
+           display: grid;
+           gap: 2px;
+           padding: 10px;
+           background-color: #ccc;
+           width: fit-content;
+           border: 2px solid #333;
+       }
 
-.cell {
-   width: 50px;
-   height: 50px;
-   background-color: #fff;
-   position: relative;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   cursor: pointer;
-   font-size: 24px;
-   font-family: monospace;
-   border-top: 2px solid #333;
-   border-left: 2px solid #333;
-}
+       .cell {
+           width: 50px;
+           height: 50px;
+           background-color: #fff;
+           position: relative;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           cursor: pointer;
+           font-size: 24px;
+           font-family: monospace;
+           border-top: 2px solid #333;
+           border-left: 2px solid #333;
+       }
 
-.cell[data-x="5"] {
-   border-right: 2px solid #333;
-}
+       .car {
+           background-color: #4CAF50;
+       }
 
-.cell[data-x="5"][data-y="2"] {
-   border-right: none;
-}
+       .car.red {
+           background-color: #f44336;
+       }
 
-.cell[data-x="5"][data-y="2"]::after {
-   content: "→";
-   position: absolute;
-   right: -15px;
-   font-size: 24px;
-   color: #333;
-}
+       .truck {
+           background-color: #2196F3;
+       }
 
-.cell[data-y="5"] {
-   border-bottom: 2px solid #333;
-}
+       .selected {
+           outline: 3px solid #fff;
+           outline-offset: -3px;
+           box-shadow: 0 0 10px rgba(0,0,0,0.5);
+       }
 
-.car {
-   background-color: #4CAF50;
-}
+       .controls {
+           margin-top: 20px;
+       }
 
-.car.red {
-   background-color: #f44336;
-}
+       .controls button {
+           padding: 8px 16px;
+           font-size: 16px;
+           cursor: pointer;
+           background-color: #fff;
+           border: 2px solid #333;
+           border-radius: 4px;
+       }
 
-.truck {
-   background-color: #2196F3;
-}
+       .controls button:hover {
+           background-color: #f0f0f0;
+       }
 
-.selected {
-   outline: 3px solid #fff;
-   outline-offset: -3px;
-   box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
+       .instructions {
+           margin: 20px 20px;
+           padding: 15px;
+           background-color: #f0f0f0;
+           border-radius: 5px;
+       }
 
-.controls {
-   margin-top: 20px;
-}
+       .instructions ul {
+           margin: 10px 0;
+           padding-left: 20px;
+       }
 
-.controls button {
-   padding: 8px 16px;
-   font-size: 16px;
-   cursor: pointer;
-   background-color: #fff;
-   border: 2px solid #333;
-   border-radius: 4px;
-}
-
-.controls button:hover {
-   background-color: #f0f0f0;
-}
-
-.instructions {
-    margin: 20px 20px;  /* Change from margin: 20px auto */
-    padding: 15px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    /* Remove max-width */
-}
-
-.instructions ul {
-   margin: 10px 0;
-   padding-left: 20px;
-}
-
-.instructions li {
-   margin: 5px 0;
-}
+       .instructions li {
+           margin: 5px 0;
+       }
    </style>
 </head>
 <body>
@@ -161,8 +139,6 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </div>
 
    <script>
-       const BOARD_SIZE = 6;
-
        class GameInstance {
            constructor(container, initialState) {
                this.container = container;
@@ -171,27 +147,93 @@ words. Cars can only move forwards or backwards in the direction they are facing
                this.selectedVehicle = null;
                this.moveCount = 0;
                this.lastTrack = null;
+               this.gridSize = initialState.gridSize;
                
                this.createBoard();
                this.setupEventListeners();
            }
 
            createBoard() {
-               const board = this.container.querySelector('.game-board');
-               board.innerHTML = '';
+            const board = this.container.querySelector('.game-board');
+            board.innerHTML = '';
+            
+            // Create and add dynamic styles for this specific board
+            const styleId = `board-style-${this.container.id}`;
+            let styleEl = document.getElementById(styleId);
+            if (!styleEl) {
+                styleEl = document.createElement('style');
+                styleEl.id = styleId;
+                document.head.appendChild(styleEl);
+            }
+            
+            styleEl.textContent = `
+                .game-board {
+                    grid-template-columns: repeat(${this.gridSize.width}, 50px);
+                }
+                
+                .cell[data-x="${this.gridSize.width - 1}"] {
+                    border-right: 2px solid #333;
+                }
+                
+                .cell[data-y="${this.gridSize.height - 1}"] {
+                    border-bottom: 2px solid #333;
+                }
+                
+                .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"] {
+                    border-right: none;
+                }
+                
+                .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"]::after {
+                    content: "→";
+                    position: absolute;
+                    right: -15px;
+                    font-size: 24px;
+                    color: #333;
+                }
+            `;
 
-               for (let y = 0; y < BOARD_SIZE; y++) {
-                   for (let x = 0; x < BOARD_SIZE; x++) {
-                       const cell = document.createElement('div');
-                       cell.className = 'cell';
-                       cell.dataset.x = x;
-                       cell.dataset.y = y;
-                       board.appendChild(cell);
-                   }
-               }
+            styleEl.textContent += `
+                    /* Horizontal vehicles */
+                    .car.horizontal:first-of-type, .truck.horizontal:first-of-type {
+                        border-radius: 25px 0 0 25px;  /* Round left side */
+                    }
+                    .car.horizontal:last-of-type, .truck.horizontal:last-of-type {
+                        border-radius: 0 25px 25px 0;  /* Round right side */
+                    }
 
-               this.placeVehicles();
-           }
+                    /* Vertical vehicles */
+                    .car.vertical:first-of-type, .truck.vertical:first-of-type {
+                        border-radius: 25px 25px 0 0;  /* Round top */
+                    }
+                    .car.vertical:last-of-type, .truck.vertical:last-of-type {
+                        border-radius: 0 0 25px 25px;  /* Round bottom */
+                    }
+            `;
+
+            styleEl.textContent += this.gameState.vehicles.map((vehicle, index) => {
+                const blueShade = Math.max(30, 65 - (index * 10)); // Start at 65% blue, decrease by 10%
+                return `
+                    .car.vehicle-${index}, .truck.vehicle-${index} {
+                        background-color: hsl(210, 80%, ${blueShade}%);
+                    }
+                `;
+            }).join('\n');
+
+
+
+            // Create cells
+            for (let y = 0; y < this.gridSize.height; y++) {
+                for (let x = 0; x < this.gridSize.width; x++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'cell';
+                    cell.dataset.x = x;
+                    cell.dataset.y = y;
+                    board.appendChild(cell);
+                }
+            }
+
+            this.placeVehicles();
+        }
 
            placeVehicles() {
                this.container.querySelectorAll('.selected').forEach(el => el.classList.remove('selected'));
@@ -203,19 +245,29 @@ words. Cars can only move forwards or backwards in the direction they are facing
                }
            }
 
-           placeVehicle(vehicle) {
-               for (let i = 0; i < vehicle.length; i++) {
-                   const x = vehicle.horizontal ? vehicle.x + i : vehicle.x;
-                   const y = vehicle.horizontal ? vehicle.y : vehicle.y + i;
-                   const cell = this.container.querySelector(`[data-x="${x}"][data-y="${y}"]`);
-                   cell.classList.add(vehicle.length === 3 ? 'truck' : 'car');
-                   if (vehicle.color === 'red') cell.classList.add('red');
-                   cell.textContent = vehicle.letters[i];
-               }
-           }
+
+            // Update placeVehicle to add direction class
+            placeVehicle(vehicle) {
+                const vehicleIndex = this.gameState.vehicles.indexOf(vehicle);
+                const direction = vehicle.horizontal ? 'horizontal' : 'vertical';
+                
+                for (let i = 0; i < vehicle.letters.length; i++) {
+                    const x = vehicle.horizontal ? vehicle.x + i : vehicle.x;
+                    const y = vehicle.horizontal ? vehicle.y : vehicle.y + i;
+                    const cell = this.container.querySelector(`[data-x="${x}"][data-y="${y}"]`);
+                    cell.classList.add(vehicle.letters.length === 3 ? 'truck' : 'car');
+                    cell.classList.add(direction);
+                    if (vehicle.color === 'red') {
+                        cell.classList.add('red');
+                    } else {
+                        cell.classList.add(`vehicle-${vehicleIndex}`);
+                    }
+                    cell.textContent = vehicle.letters[i];
+                }
+            }
 
            highlightVehicle(vehicle) {
-               for (let i = 0; i < vehicle.length; i++) {
+               for (let i = 0; i < vehicle.letters.length; i++) {
                    const x = vehicle.horizontal ? vehicle.x + i : vehicle.x;
                    const y = vehicle.horizontal ? vehicle.y : vehicle.y + i;
                    const cell = this.container.querySelector(`[data-x="${x}"][data-y="${y}"]`);
@@ -224,66 +276,57 @@ words. Cars can only move forwards or backwards in the direction they are facing
            }
 
            setupEventListeners() {
-                // Add cell click listeners
-                this.container.querySelectorAll('.cell').forEach(cell => {
-                    cell.addEventListener('click', (e) => this.handleCellClick(e));
-                });
+               this.container.querySelectorAll('.cell').forEach(cell => {
+                   cell.addEventListener('click', (e) => this.handleCellClick(e));
+               });
 
-                // Add keyboard listener to the game container instead of document
-                this.container.addEventListener('keydown', (e) => {
-                    if (this.selectedVehicle) {
-                        this.handleKeyPress(e);
-                    }
-                });
+               document.addEventListener('keydown', (e) => {
+                   if (this.selectedVehicle) {
+                       this.handleKeyPress(e);
+                   }
+               });
 
-                // Add reset button listener
-                this.container.querySelector('button').addEventListener('click', () => this.resetGame());
-                
-                // Make container focusable
-                this.container.tabIndex = 0;
-            }
+               this.container.querySelector('button').addEventListener('click', () => this.resetGame());
+           }
 
-            handleCellClick(event) {
-                const cell = event.target;
-                const x = parseInt(cell.dataset.x);
-                const y = parseInt(cell.dataset.y);
-                console.log('Clicked on x', x, 'and y', y);
+           handleCellClick(event) {
+               const cell = event.target;
+               const x = parseInt(cell.dataset.x);
+               const y = parseInt(cell.dataset.y);
 
-                if (cell.classList.contains('car') || cell.classList.contains('truck')) {
-                    const vehicle = this.findVehicle(x, y);
-                    // Always select the clicked vehicle, replacing any previous selection
-                    this.selectedVehicle = vehicle;
-                    this.lastTrack = null;
-                    this.placeVehicles();
-                }
-            }
+               if (cell.classList.contains('car') || cell.classList.contains('truck')) {
+                   const vehicle = this.findVehicle(x, y);
+                   this.selectedVehicle = vehicle;
+                   this.lastTrack = null;
+                   this.placeVehicles();
+               }
+           }
 
-            handleKeyPress(event) {
-                if (!this.selectedVehicle) return;
+           handleKeyPress(event) {
+               if (!this.selectedVehicle) return;
 
-                // Prevent page scrolling
-                if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
-                    event.preventDefault();
-                }
+               if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+                   event.preventDefault();
+               }
 
-                let dx = 0;
-                let dy = 0;
+               let dx = 0;
+               let dy = 0;
 
-                if (this.selectedVehicle.horizontal) {
-                    if (event.key === 'ArrowLeft') dx = -1;
-                    if (event.key === 'ArrowRight') dx = 1;
-                } else {
-                    if (event.key === 'ArrowUp') dy = -1;
-                    if (event.key === 'ArrowDown') dy = 1;
-                }
+               if (this.selectedVehicle.horizontal) {
+                   if (event.key === 'ArrowLeft') dx = -1;
+                   if (event.key === 'ArrowRight') dx = 1;
+               } else {
+                   if (event.key === 'ArrowUp') dy = -1;
+                   if (event.key === 'ArrowDown') dy = 1;
+               }
 
-                if (dx !== 0 || dy !== 0) {
-                    if (this.canMove(this.selectedVehicle, dx, dy)) {
-                        this.moveVehicle(this.selectedVehicle, dx, dy);
-                        this.checkWin();
-                    }
-                }
-            }
+               if (dx !== 0 || dy !== 0) {
+                   if (this.canMove(this.selectedVehicle, dx, dy)) {
+                       this.moveVehicle(this.selectedVehicle, dx, dy);
+                       this.checkWin();
+                   }
+               }
+           }
 
            findVehicle(x, y) {
                if (this.isPointInVehicle(this.gameState.redCar, x, y)) return this.gameState.redCar;
@@ -291,7 +334,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
            }
 
            isPointInVehicle(vehicle, x, y) {
-               for (let i = 0; i < vehicle.length; i++) {
+               for (let i = 0; i < vehicle.letters.length; i++) {
                    const vx = vehicle.horizontal ? vehicle.x + i : vehicle.x;
                    const vy = vehicle.horizontal ? vehicle.y : vehicle.y + i;
                    if (vx === x && vy === y) return true;
@@ -304,10 +347,10 @@ words. Cars can only move forwards or backwards in the direction they are facing
                const newY = vehicle.y + dy;
 
                if (newX < 0 || newY < 0) return false;
-               if (vehicle.horizontal && newX + vehicle.length > BOARD_SIZE) return false;
-               if (!vehicle.horizontal && newY + vehicle.length > BOARD_SIZE) return false;
+               if (vehicle.horizontal && newX + vehicle.letters.length > this.gridSize.width) return false;
+               if (!vehicle.horizontal && newY + vehicle.letters.length > this.gridSize.height) return false;
 
-               for (let i = 0; i < vehicle.length; i++) {
+               for (let i = 0; i < vehicle.letters.length; i++) {
                    const x = vehicle.horizontal ? newX + i : newX;
                    const y = vehicle.horizontal ? newY : newY + i;
                    
@@ -335,15 +378,14 @@ words. Cars can only move forwards or backwards in the direction they are facing
                vehicle.y += dy;
                this.createBoard();
 
-                // Reattach event listeners after recreating the board
-                this.container.querySelectorAll('.cell').forEach(cell => {
-                    cell.addEventListener('click', (e) => this.handleCellClick(e));
-                });
+               this.container.querySelectorAll('.cell').forEach(cell => {
+                   cell.addEventListener('click', (e) => this.handleCellClick(e));
+               });
            }
 
            checkWin() {
-               if (this.gameState.redCar.x + this.gameState.redCar.length === BOARD_SIZE && 
-                   this.gameState.redCar.y === 2) {
+               if (this.gameState.redCar.x + this.gameState.redCar.letters.length === this.gridSize.width && 
+                   this.gameState.redCar.y === this.gameState.redCar.y) {
                    alert(`Congratulations! You solved the puzzle in ${this.moveCount} moves!`);
                }
            }
@@ -362,30 +404,22 @@ words. Cars can only move forwards or backwards in the direction they are facing
            try {
                const boardStates = [
                    {
+                       gridSize: {
+                           width: 5,
+                           height: 4
+                       },
                        redCar: { 
-                           x: 1, y: 2, length: 1, horizontal: true, color: 'red',
-                           letters: ['R', 'R']
+                           x: 0, y: 1, horizontal: true, color: 'red',
+                           letters: [' ']
                        },
                        vehicles: [
-                           { x: 0, y: 0, length: 2, horizontal: true, letters: ['A', 'A']},
-                           { x: 3, y: 0, length: 3, horizontal: false, letters: ['B', 'B', 'B']},
-                           { x: 4, y: 1, length: 2, horizontal: true, letters: ['C', 'C']},
-                           { x: 5, y: 3, length: 3, horizontal: false, letters: ['D', 'D', 'D']}
+                           { x: 0, y: 0, horizontal: true, letters: ['E', 'A', 'R']},
+                           { x: 1, y: 1, horizontal: false, letters: ['T']},
+                           { x: 1, y: 2, horizontal: true, letters: ['O', 'N']},
+                           { x: 0, y: 3, horizontal: true, letters: ['U', 'P']},
+                           { x: 3, y: 1, horizontal: false, letters: ['X']}
                        ]
-                   },
-                   {
-                       redCar: { 
-                           x: 1, y: 2, length: 2, horizontal: true, color: 'red',
-                           letters: ['R', 'R']
-                       },
-                       vehicles: [
-                           { x: 0, y: 0, length: 2, horizontal: true, letters: ['A', 'A']},
-                           { x: 3, y: 0, length: 3, horizontal: false, letters: ['B', 'B', 'B']},
-                           { x: 4, y: 1, length: 2, horizontal: true, letters: ['C', 'C']},
-                           { x: 5, y: 3, length: 3, horizontal: false, letters: ['D', 'D', 'D']}
-                       ]
-                   },
-                   // Add more board states here
+                   }
                ];
 
                boardStates.forEach((state, index) => {
@@ -415,8 +449,8 @@ words. Cars can only move forwards or backwards in the direction they are facing
            new GameInstance(container, initialState);
        }
 
-       // Load all boards when the page loads
        loadBoards();
    </script>
 </body>
 </html>
+
