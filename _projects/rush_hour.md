@@ -24,12 +24,13 @@ words. Cars can only move forwards or backwards in the direction they are facing
 }
 
 .game-instance {
-    margin-left: 20px;  /* Add left margin */
-    border: none;
+    margin-left: 20px;
+    border: none;  /* Remove any border */
     padding: 20px;
     border-radius: 8px;
     background-color: #f8f8f8;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    outline: none;  /* Add this to remove the focus outline */
 }
 
 .game-instance h3 {
@@ -246,40 +247,43 @@ words. Cars can only move forwards or backwards in the direction they are facing
                 const cell = event.target;
                 const x = parseInt(cell.dataset.x);
                 const y = parseInt(cell.dataset.y);
+                console.log('Clicked on x', x, 'and y', y);
 
                 if (cell.classList.contains('car') || cell.classList.contains('truck')) {
                     const vehicle = this.findVehicle(x, y);
-                    if (this.selectedVehicle === vehicle) {
-                        this.selectedVehicle = null;
-                        this.lastTrack = null;
-                    } else {
-                        this.selectedVehicle = vehicle;
-                        this.lastTrack = null;
-                        this.container.focus();  // Add this line
-                    }
+                    // Always select the clicked vehicle, replacing any previous selection
+                    this.selectedVehicle = vehicle;
+                    this.lastTrack = null;
                     this.placeVehicles();
                 }
             }
 
-           handleKeyPress(event) {
-               let dx = 0;
-               let dy = 0;
+            handleKeyPress(event) {
+                if (!this.selectedVehicle) return;
 
-               if (this.selectedVehicle.horizontal) {
-                   if (event.key === 'ArrowLeft') dx = -1;
-                   if (event.key === 'ArrowRight') dx = 1;
-               } else {
-                   if (event.key === 'ArrowUp') dy = -1;
-                   if (event.key === 'ArrowDown') dy = 1;
-               }
+                // Prevent page scrolling
+                if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+                    event.preventDefault();
+                }
 
-               if (dx !== 0 || dy !== 0) {
-                   if (this.canMove(this.selectedVehicle, dx, dy)) {
-                       this.moveVehicle(this.selectedVehicle, dx, dy);
-                       this.checkWin();
-                   }
-               }
-           }
+                let dx = 0;
+                let dy = 0;
+
+                if (this.selectedVehicle.horizontal) {
+                    if (event.key === 'ArrowLeft') dx = -1;
+                    if (event.key === 'ArrowRight') dx = 1;
+                } else {
+                    if (event.key === 'ArrowUp') dy = -1;
+                    if (event.key === 'ArrowDown') dy = 1;
+                }
+
+                if (dx !== 0 || dy !== 0) {
+                    if (this.canMove(this.selectedVehicle, dx, dy)) {
+                        this.moveVehicle(this.selectedVehicle, dx, dy);
+                        this.checkWin();
+                    }
+                }
+            }
 
            findVehicle(x, y) {
                if (this.isPointInVehicle(this.gameState.redCar, x, y)) return this.gameState.redCar;
@@ -330,6 +334,11 @@ words. Cars can only move forwards or backwards in the direction they are facing
                vehicle.x += dx;
                vehicle.y += dy;
                this.createBoard();
+
+                // Reattach event listeners after recreating the board
+                this.container.querySelectorAll('.cell').forEach(cell => {
+                    cell.addEventListener('click', (e) => this.handleCellClick(e));
+                });
            }
 
            checkWin() {
