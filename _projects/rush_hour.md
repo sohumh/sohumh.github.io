@@ -138,6 +138,10 @@ words. Cars can only move forwards or backwards in the direction they are facing
             border-radius: inherit;
             z-index: -1;
         }
+
+        .invalid-word {
+            background-color: #ffebee;
+        }
    </style>
 </head>
 <body>
@@ -148,6 +152,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
            <li>Use arrow keys to move selected vehicle</li>
            <li>Get the red car to the exit arrow</li>
            <li>Moves count once per track selection</li>
+           <li>All consecutive letters must form valid words</li>
        </ul>
    </div>
 
@@ -156,6 +161,8 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </div>
 
    <script>
+       const VALID_WORDS = new Set(['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR']); // Add your valid words here
+
        class GameInstance {
            constructor(container, initialState) {
                this.container = container;
@@ -261,6 +268,77 @@ words. Cars can only move forwards or backwards in the direction they are facing
                }
            }
 
+           validateWords() {
+               // Get all letters in the grid
+               const grid = Array(this.gridSize.height).fill().map(() => 
+                   Array(this.gridSize.width).fill(' ')
+               );
+
+               // Fill grid with letters from vehicles
+               const fillVehicleLetters = (vehicle) => {
+                   for (let i = 0; i < vehicle.letters.length; i++) {
+                       const x = vehicle.horizontal ? vehicle.x + i : vehicle.x;
+                       const y = vehicle.horizontal ? vehicle.y : vehicle.y + i;
+                       grid[y][x] = vehicle.letters[i];
+                   }
+               };
+
+               fillVehicleLetters(this.gameState.redCar);
+               this.gameState.vehicles.forEach(fillVehicleLetters);
+
+               // Check rows and columns for invalid words
+               let isValid = true;
+               let invalidWord = '';
+
+               // Check rows
+               for (let y = 0; y < this.gridSize.height; y++) {
+                   let word = '';
+                   for (let x = 0; x < this.gridSize.width; x++) {
+                       if (grid[y][x] !== ' ') {
+                           word += grid[y][x];
+                       } else if (word.length >= 2) {
+                           if (!VALID_WORDS.has(word)) {
+                               isValid = false;
+                               invalidWord = word;
+                           }
+                           word = '';
+                       } else {
+                           word = '';
+                       }
+                   }
+                   if (word.length >= 2 && !VALID_WORDS.has(word)) {
+                       isValid = false;
+                       invalidWord = word;
+                   }
+               }
+
+               // Check columns
+               for (let x = 0; x < this.gridSize.width; x++) {
+                   let word = '';
+                   for (let y = 0; y < this.gridSize.height; y++) {
+                       if (grid[y][x] !== ' ') {
+                           word += grid[y][x];
+                       } else if (word.length >= 2) {
+                           if (!VALID_WORDS.has(word)) {
+                               isValid = false;
+                               invalidWord = word;
+                           }
+                           word = '';
+                       } else {
+                           word = '';
+                       }
+                   }
+                   if (word.length >= 2 && !VALID_WORDS.has(word)) {
+                       isValid = false;
+                       invalidWord = word;
+                   }
+               }
+
+               if (!isValid) {
+                   this.invalidWord = invalidWord;
+               }
+               return isValid;
+           }
 
             placeVehicle(vehicle) {
                 const { x, y, horizontal, letters, color } = vehicle;
@@ -295,8 +373,6 @@ words. Cars can only move forwards or backwards in the direction they are facing
                 }
             }
 
-
-
            highlightVehicle(vehicle) {
                for (let i = 0; i < vehicle.letters.length; i++) {
                    const x = vehicle.horizontal ? vehicle.x + i : vehicle.x;
@@ -327,6 +403,17 @@ words. Cars can only move forwards or backwards in the direction they are facing
 
                if (cell.classList.contains('car') || cell.classList.contains('truck')) {
                    const vehicle = this.findVehicle(x, y);
+                   
+                   // Check word validity before changing selection
+                   if (this.selectedVehicle && !this.validateWords()) {
+                       // Revert all moves made with invalid vehicle
+                       this.gameState = JSON.parse(JSON.stringify(this.initialState));
+                       this.resetGame();
+                       alert(`Invalid word formation: ${this.invalidWord}`);
+                       this.createBoard();
+                       return;
+                   }
+                   
                    this.selectedVehicle = vehicle;
                    this.lastTrack = null;
                    this.placeVehicles();
