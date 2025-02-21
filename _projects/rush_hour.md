@@ -11,7 +11,6 @@ In the following variation of rush hour, the cars are words. Any time a car fini
 words. Cars can only move forwards or backwards in the direction they are facing, and can move many spaces at once.
 
 
-<!DOCTYPE html>
 <html>
 <head>
    <title>Word Rush Hour</title>
@@ -71,19 +70,23 @@ words. Cars can only move forwards or backwards in the direction they are facing
            border-left: 2px solid #333;
        }
 
-       .car {
-           background-color: #4CAF50;
+       .vehicle-container {
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           display: flex;
+           align-items: center;
+           justify-content: center;
        }
 
        .car.red {
            background-color: #f44336;
+           border-radius: 0 25px 25px 0;    
        }
 
-       .truck {
-           background-color: #2196F3;
-       }
-
-       .selected {
+       .selected .vehicle-container {
            outline: 3px solid #fff;
            outline-offset: -3px;
            box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -121,6 +124,20 @@ words. Cars can only move forwards or backwards in the direction they are facing
        .instructions li {
            margin: 5px 0;
        }
+
+       .vehicle-start .vehicle-container, .vehicle-end .vehicle-container {
+            position: relative;
+        }
+
+        .vehicle-start .vehicle-container::before, .vehicle-end .vehicle-container::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: white;
+            border-radius: inherit;
+            z-index: -1;
+        }
    </style>
 </head>
 <body>
@@ -192,28 +209,27 @@ words. Cars can only move forwards or backwards in the direction they are facing
                 }
             `;
 
-            styleEl.textContent += `
-                    /* Horizontal vehicles */
-                    .car.horizontal:first-of-type, .truck.horizontal:first-of-type {
-                        border-radius: 25px 0 0 25px;  /* Round left side */
-                    }
-                    .car.horizontal:last-of-type, .truck.horizontal:last-of-type {
-                        border-radius: 0 25px 25px 0;  /* Round right side */
-                    }
+            styleEl.textContent += this.gameState.vehicles.map((_, index) => `
+                /* Round corners for each vehicle */
+                .vehicle-${index}-start.horizontal .vehicle-container {
+                    border-radius: 25px 0 0 25px;  /* Round left */
+                }
+                .vehicle-${index}-end.horizontal .vehicle-container {
+                    border-radius: 0 25px 25px 0;  /* Round right */
+                }
+                .vehicle-${index}-start.vertical .vehicle-container {
+                    border-radius: 25px 25px 0 0;  /* Round top */
+                }
+                .vehicle-${index}-end.vertical .vehicle-container {
+                    border-radius: 0 0 25px 25px;  /* Round bottom */
+                }
+            `).join('\n');
 
-                    /* Vertical vehicles */
-                    .car.vertical:first-of-type, .truck.vertical:first-of-type {
-                        border-radius: 25px 25px 0 0;  /* Round top */
-                    }
-                    .car.vertical:last-of-type, .truck.vertical:last-of-type {
-                        border-radius: 0 0 25px 25px;  /* Round bottom */
-                    }
-            `;
 
             styleEl.textContent += this.gameState.vehicles.map((vehicle, index) => {
                 const blueShade = Math.max(30, 65 - (index * 10)); // Start at 65% blue, decrease by 10%
                 return `
-                    .car.vehicle-${index}, .truck.vehicle-${index} {
+                    .car.vehicle-${index} .vehicle-container, .truck.vehicle-${index} .vehicle-container {
                         background-color: hsl(210, 80%, ${blueShade}%);
                     }
                 `;
@@ -246,25 +262,40 @@ words. Cars can only move forwards or backwards in the direction they are facing
            }
 
 
-            // Update placeVehicle to add direction class
             placeVehicle(vehicle) {
+                const { x, y, horizontal, letters, color } = vehicle;
                 const vehicleIndex = this.gameState.vehicles.indexOf(vehicle);
-                const direction = vehicle.horizontal ? 'horizontal' : 'vertical';
-                
-                for (let i = 0; i < vehicle.letters.length; i++) {
-                    const x = vehicle.horizontal ? vehicle.x + i : vehicle.x;
-                    const y = vehicle.horizontal ? vehicle.y : vehicle.y + i;
-                    const cell = this.container.querySelector(`[data-x="${x}"][data-y="${y}"]`);
-                    cell.classList.add(vehicle.letters.length === 3 ? 'truck' : 'car');
-                    cell.classList.add(direction);
-                    if (vehicle.color === 'red') {
-                        cell.classList.add('red');
-                    } else {
-                        cell.classList.add(`vehicle-${vehicleIndex}`);
+                const direction = horizontal ? 'horizontal' : 'vertical';
+                const length = letters.length;
+
+                for (let i = 0; i < length; i++) {
+                    const cellX = horizontal ? x + i : x;
+                    const cellY = horizontal ? y : y + i;
+                    const cell = this.container.querySelector(`[data-x="${cellX}"][data-y="${cellY}"]`);
+
+                    if (!cell) continue; // Safety check
+
+                    const vehicleContainer = document.createElement('div');
+                    vehicleContainer.className = 'vehicle-container';
+                    cell.classList.add(length === 3 ? 'truck' : 'car', direction, `vehicle-${vehicleIndex}`);
+
+                    // Add rounded class logic
+                    if (length === 1) {
+                        cell.classList.add(`vehicle-${vehicleIndex}-start`, `vehicle-${vehicleIndex}-end`);
+                    } else if (i === 0) {
+                        cell.classList.add(`vehicle-${vehicleIndex}-start`);
+                    } else if (i === length - 1) {
+                        cell.classList.add(`vehicle-${vehicleIndex}-end`);
                     }
-                    cell.textContent = vehicle.letters[i];
+
+                    if (color === 'red') cell.classList.add('red');
+
+                    vehicleContainer.textContent = letters[i];
+                    cell.appendChild(vehicleContainer);
                 }
             }
+
+
 
            highlightVehicle(vehicle) {
                for (let i = 0; i < vehicle.letters.length; i++) {
@@ -290,7 +321,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
            }
 
            handleCellClick(event) {
-               const cell = event.target;
+               const cell = event.target.closest('.cell');
                const x = parseInt(cell.dataset.x);
                const y = parseInt(cell.dataset.y);
 
@@ -453,4 +484,3 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </script>
 </body>
 </html>
-
