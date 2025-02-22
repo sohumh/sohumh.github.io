@@ -70,21 +70,21 @@ words. Cars can only move forwards or backwards in the direction they are facing
            border-left: 2px solid #333;
        }
 
-       .vehicle-container {
-           position: absolute;
-           top: 0;
-           left: 0;
-           width: 100%;
-           height: 100%;
-           display: flex;
-           align-items: center;
-           justify-content: center;
-       }
+        .vehicle-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-       .car.red {
-           background-color: #f44336;
-           border-radius: 0 25px 25px 0;    
-       }
+        /* Add red as another vehicle option */
+        .car.vehicle-red .vehicle-container {
+            background-color: #f44336;
+        }
 
        .selected .vehicle-container {
            outline: 3px solid #fff;
@@ -161,7 +161,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </div>
 
    <script>
-       const VALID_WORDS = new Set(['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR']); // Add your valid words here
+       const VALID_WORDS = new Set(['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR', 'OX']); // Add your valid words here
 
        class GameInstance {
            constructor(container, initialState) {
@@ -177,6 +177,18 @@ words. Cars can only move forwards or backwards in the direction they are facing
                this.setupEventListeners();
            }
 
+           attachEventListeners() {
+                // Clear existing listeners first
+                this.container.querySelectorAll('.cell').forEach(cell => {
+                    const clone = cell.cloneNode(true);
+                    cell.parentNode.replaceChild(clone, cell);
+                });
+
+                // Attach new listeners
+                this.container.querySelectorAll('.cell').forEach(cell => {
+                    cell.addEventListener('click', (e) => this.handleCellClick(e));
+                });
+            }
            createBoard() {
             const board = this.container.querySelector('.game-board');
             board.innerHTML = '';
@@ -214,6 +226,18 @@ words. Cars can only move forwards or backwards in the direction they are facing
                     font-size: 24px;
                     color: #333;
                 }
+
+                .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"]::after {
+                    content: "→";
+                    position: absolute;
+                    right: -22px;  /* Move it further out */
+                    top: 50%;
+                    transform: translateY(-50%);  /* Center vertically */
+                    font-size: 20px;
+                    color: #333;
+                    font-weight: bold;  /* Make it bolder */
+                    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);  /* Add subtle shadow */
+                }
             `;
 
             styleEl.textContent += this.gameState.vehicles.map((_, index) => `
@@ -229,6 +253,11 @@ words. Cars can only move forwards or backwards in the direction they are facing
                 }
                 .vehicle-${index}-end.vertical .vehicle-container {
                     border-radius: 0 0 25px 25px;  /* Round bottom */
+                }
+
+                /* Add rounding for the red car */
+                .vehicle-red-start.horizontal .vehicle-container {
+                    border-radius: 0px 25px 25px 0px;  /* Round left */
                 }
             `).join('\n');
 
@@ -256,6 +285,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
             }
 
             this.placeVehicles();
+            this.attachEventListeners();
         }
 
            placeVehicles() {
@@ -342,7 +372,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
 
             placeVehicle(vehicle) {
                 const { x, y, horizontal, letters, color } = vehicle;
-                const vehicleIndex = this.gameState.vehicles.indexOf(vehicle);
+                const vehicleIndex = color === 'red' ? 'red' : this.gameState.vehicles.indexOf(vehicle);
                 const direction = horizontal ? 'horizontal' : 'vertical';
                 const length = letters.length;
 
@@ -351,22 +381,18 @@ words. Cars can only move forwards or backwards in the direction they are facing
                     const cellY = horizontal ? y : y + i;
                     const cell = this.container.querySelector(`[data-x="${cellX}"][data-y="${cellY}"]`);
 
-                    if (!cell) continue; // Safety check
+                    if (!cell) continue;
 
                     const vehicleContainer = document.createElement('div');
                     vehicleContainer.className = 'vehicle-container';
-                    cell.classList.add(length === 3 ? 'truck' : 'car', direction, `vehicle-${vehicleIndex}`);
+                    
+                    cell.classList.add('car', direction, `vehicle-${vehicleIndex}`);
 
-                    // Add rounded class logic
-                    if (length === 1) {
-                        cell.classList.add(`vehicle-${vehicleIndex}-start`, `vehicle-${vehicleIndex}-end`);
-                    } else if (i === 0) {
+                    if (i === 0) {
                         cell.classList.add(`vehicle-${vehicleIndex}-start`);
                     } else if (i === length - 1) {
                         cell.classList.add(`vehicle-${vehicleIndex}-end`);
                     }
-
-                    if (color === 'red') cell.classList.add('red');
 
                     vehicleContainer.textContent = letters[i];
                     cell.appendChild(vehicleContainer);
@@ -383,10 +409,6 @@ words. Cars can only move forwards or backwards in the direction they are facing
            }
 
            setupEventListeners() {
-               this.container.querySelectorAll('.cell').forEach(cell => {
-                   cell.addEventListener('click', (e) => this.handleCellClick(e));
-               });
-
                document.addEventListener('keydown', (e) => {
                    if (this.selectedVehicle) {
                        this.handleKeyPress(e);
@@ -495,10 +517,6 @@ words. Cars can only move forwards or backwards in the direction they are facing
                vehicle.x += dx;
                vehicle.y += dy;
                this.createBoard();
-
-               this.container.querySelectorAll('.cell').forEach(cell => {
-                   cell.addEventListener('click', (e) => this.handleCellClick(e));
-               });
            }
 
            checkWin() {
@@ -521,6 +539,23 @@ words. Cars can only move forwards or backwards in the direction they are facing
        async function loadBoards() {
            try {
                const boardStates = [
+                   {
+                       gridSize: {
+                           width: 5,
+                           height: 4
+                       },
+                       redCar: { 
+                           x: 0, y: 1, horizontal: true, color: 'red',
+                           letters: [' ']
+                       },
+                       vehicles: [
+                           { x: 0, y: 0, horizontal: true, letters: ['E', 'A', 'R']},
+                           { x: 1, y: 1, horizontal: false, letters: ['T']},
+                           { x: 1, y: 2, horizontal: true, letters: ['O', 'N']},
+                           { x: 0, y: 3, horizontal: true, letters: ['U', 'P']},
+                           { x: 3, y: 1, horizontal: false, letters: ['X']}
+                       ]
+                   },
                    {
                        gridSize: {
                            width: 5,
