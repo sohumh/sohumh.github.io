@@ -2,8 +2,8 @@
 layout: page
 title: Word Rush Hour
 description: Rush hour where the cars are words.
-importance: 6
-img: assets/img/together.png
+importance: 1
+img: assets/img/rush-hour.png
 category: puzzles
 ---
 
@@ -112,7 +112,6 @@ words. Cars can only move forwards or backwards in the direction they are facing
        .instructions {
            margin: 20px 20px;
            padding: 15px;
-           background-color: #f0f0f0;
            border-radius: 5px;
        }
 
@@ -149,7 +148,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
        <p>Instructions:</p>
        <ul>
            <li>Click a vehicle to select it</li>
-           <li>Use arrow keys to move selected vehicle</li>
+           <li>Use the keyboard arrow keys to move selected vehicle</li>
            <li>Get the red car to the exit arrow</li>
            <li>Moves count once per track selection</li>
            <li>All consecutive letters must form valid words</li>
@@ -555,23 +554,6 @@ words. Cars can only move forwards or backwards in the direction they are facing
                            { x: 0, y: 3, horizontal: true, letters: ['U', 'P']},
                            { x: 3, y: 1, horizontal: false, letters: ['X']}
                        ]
-                   },
-                   {
-                       gridSize: {
-                           width: 5,
-                           height: 4
-                       },
-                       redCar: { 
-                           x: 0, y: 1, horizontal: true, color: 'red',
-                           letters: [' ']
-                       },
-                       vehicles: [
-                           { x: 0, y: 0, horizontal: true, letters: ['E', 'A', 'R']},
-                           { x: 1, y: 1, horizontal: false, letters: ['T']},
-                           { x: 1, y: 2, horizontal: true, letters: ['O', 'N']},
-                           { x: 0, y: 3, horizontal: true, letters: ['U', 'P']},
-                           { x: 3, y: 1, horizontal: false, letters: ['X']}
-                       ]
                    }
                ];
 
@@ -592,6 +574,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
                <div class="game-board"></div>
                <div class="controls">
                    <button>Reset</button>
+                   <br>
                    <p>Moves: <span class="moves">0</span></p>
                </div>
            `;
