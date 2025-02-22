@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Marble's voyage
+title: Marble voyage
 description: Spell a word as a marble ricochets off letter-lined walls
 img: assets/img/marbles.png
 redirect: /assets/pdf/marbles.pdf
