@@ -160,7 +160,10 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </div>
 
    <script>
-       const VALID_WORDS = new Set(['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR', 'OX']); // Add your valid words here
+       const PUZZLE_1_WORDS = ['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR', 'OX'];
+       const PUZZLE_2_WORDS = ['HORN', 'TIE', 'YEA', 'OR', 'OAT', 'HAT', 'NOR', 'IN', 'THORN', 'YEAR', 'RAIN', 'RAINY','TIER'];
+       const VALID_WORDS = new Set(PUZZLE_1_WORDS.concat(PUZZLE_2_WORDS));
+
 
        class GameInstance {
            constructor(container, initialState) {
@@ -189,103 +192,92 @@ words. Cars can only move forwards or backwards in the direction they are facing
                 });
             }
            createBoard() {
-            const board = this.container.querySelector('.game-board');
-            board.innerHTML = '';
-            
-            // Create and add dynamic styles for this specific board
-            const styleId = `board-style-${this.container.id}`;
-            let styleEl = document.getElementById(styleId);
-            if (!styleEl) {
-                styleEl = document.createElement('style');
-                styleEl.id = styleId;
-                document.head.appendChild(styleEl);
-            }
-            
-            styleEl.textContent = `
-                .game-board {
-                    grid-template-columns: repeat(${this.gridSize.width}, 50px);
-                }
-                
-                .cell[data-x="${this.gridSize.width - 1}"] {
-                    border-right: 2px solid #333;
-                }
-                
-                .cell[data-y="${this.gridSize.height - 1}"] {
-                    border-bottom: 2px solid #333;
-                }
-                
-                .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"] {
-                    border-right: none;
-                }
-                
-                .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"]::after {
-                    content: "→";
-                    position: absolute;
-                    right: -15px;
-                    font-size: 24px;
-                    color: #333;
-                }
-
-                .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"]::after {
-                    content: "→";
-                    position: absolute;
-                    right: -22px;  /* Move it further out */
-                    top: 50%;
-                    transform: translateY(-50%);  /* Center vertically */
-                    font-size: 20px;
-                    color: #333;
-                    font-weight: bold;  /* Make it bolder */
-                    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);  /* Add subtle shadow */
-                }
-            `;
-
-            styleEl.textContent += this.gameState.vehicles.map((_, index) => `
-                /* Round corners for each vehicle */
-                .vehicle-${index}-start.horizontal .vehicle-container {
-                    border-radius: 25px 0 0 25px;  /* Round left */
-                }
-                .vehicle-${index}-end.horizontal .vehicle-container {
-                    border-radius: 0 25px 25px 0;  /* Round right */
-                }
-                .vehicle-${index}-start.vertical .vehicle-container {
-                    border-radius: 25px 25px 0 0;  /* Round top */
-                }
-                .vehicle-${index}-end.vertical .vehicle-container {
-                    border-radius: 0 0 25px 25px;  /* Round bottom */
-                }
-
-                /* Add rounding for the red car */
-                .vehicle-red-start.horizontal .vehicle-container {
-                    border-radius: 0px 25px 25px 0px;  /* Round left */
-                }
-            `).join('\n');
-
-
-            styleEl.textContent += this.gameState.vehicles.map((vehicle, index) => {
-                const blueShade = Math.max(30, 65 - (index * 10)); // Start at 65% blue, decrease by 10%
-                return `
-                    .car.vehicle-${index} .vehicle-container, .truck.vehicle-${index} .vehicle-container {
-                        background-color: hsl(210, 80%, ${blueShade}%);
-                    }
-                `;
-            }).join('\n');
-
-
-
-            // Create cells
-            for (let y = 0; y < this.gridSize.height; y++) {
-                for (let x = 0; x < this.gridSize.width; x++) {
-                    const cell = document.createElement('div');
-                    cell.className = 'cell';
-                    cell.dataset.x = x;
-                    cell.dataset.y = y;
-                    board.appendChild(cell);
-                }
-            }
-
-            this.placeVehicles();
-            this.attachEventListeners();
+    const board = this.container.querySelector('.game-board');
+    board.innerHTML = '';
+    
+    // Add unique ID to board
+    const boardId = `game-board-${this.container.id}`;
+    board.id = boardId;
+    
+    const styleId = `board-style-${this.container.id}`;
+    let styleEl = document.getElementById(styleId);
+    if (!styleEl) {
+        styleEl = document.createElement('style');
+        styleEl.id = styleId;
+        document.head.appendChild(styleEl);
+    }
+    
+    styleEl.textContent = `
+        #${boardId} {
+            grid-template-columns: repeat(${this.gridSize.width}, 50px);
+            grid-template-rows: repeat(${this.gridSize.height}, 50px);
+            width: ${this.gridSize.width * 54}px;  /* 50px cell + 4px borders/gaps */
+            height: ${this.gridSize.height * 54}px;
         }
+        
+        #${boardId} .cell[data-x="${this.gridSize.width - 1}"] {
+            border-right: 2px solid #333;
+        }
+        
+        #${boardId} .cell[data-y="${this.gridSize.height - 1}"] {
+            border-bottom: 2px solid #333;
+        }
+        
+        #${boardId} .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"] {
+            border-right: none;
+        }
+        
+        #${boardId} .cell[data-x="${this.gridSize.width - 1}"][data-y="${this.gameState.redCar.y}"]::after {
+            content: "→";
+            position: absolute;
+            right: -22px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+        }
+    `;
+
+    styleEl.textContent += this.gameState.vehicles.map((_, index) => `
+        #${boardId} .vehicle-${index}-start.horizontal .vehicle-container {
+            border-radius: 25px 0 0 25px;
+        }
+        #${boardId} .vehicle-${index}-end.horizontal .vehicle-container {
+            border-radius: 0 25px 25px 0;
+        }
+        #${boardId} .vehicle-${index}-start.vertical .vehicle-container {
+            border-radius: 25px 25px 0 0;
+        }
+        #${boardId} .vehicle-${index}-end.vertical .vehicle-container {
+            border-radius: 0 0 25px 25px;
+        }
+    `).join('\n');
+
+    styleEl.textContent += this.gameState.vehicles.map((vehicle, index) => {
+        const blueShade = Math.max(30, 65 - (index * 10));
+        return `
+            #${boardId} .car.vehicle-${index} .vehicle-container {
+                background-color: hsl(210, 80%, ${blueShade}%);
+            }
+        `;
+    }).join('\n');
+
+    // Create cells
+    for (let y = 0; y < this.gridSize.height; y++) {
+        for (let x = 0; x < this.gridSize.width; x++) {
+            const cell = document.createElement('div');
+            cell.className = 'cell';
+            cell.dataset.x = x;
+            cell.dataset.y = y;
+            board.appendChild(cell);
+        }
+    }
+
+    this.placeVehicles();
+    this.attachEventListeners();
+}
 
            placeVehicles() {
                this.container.querySelectorAll('.selected').forEach(el => el.classList.remove('selected'));
@@ -537,7 +529,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
 
        async function loadBoards() {
            try {
-               const boardStates = [
+               const initialStates = [
                    {
                        gridSize: {
                            width: 5,
@@ -569,14 +561,14 @@ words. Cars can only move forwards or backwards in the direction they are facing
                            { x: 2, y: 1, horizontal: true, letters: ['A']},
                            { x: 4, y: 1, horizontal: false, letters: ['O', 'R']},
                            { x: 1, y: 2, horizontal: true, letters: ['T', 'I', 'E']},
-                           { x: 0, y: 3, horizontal: true, letters: ['T']},
+                           { x: 0, y: 3, horizontal: false, letters: ['T']},
                            { x: 2, y: 3, horizontal: true, letters: ['N']},
                            { x: 2, y: 4, horizontal: true, letters: ['Y', 'E', 'A']}
                        ]
                    }
                ];
 
-               boardStates.forEach((state, index) => {
+               initialStates.forEach((state, index) => {
                    createGameInstance(state, index + 1);
                });
            } catch (error) {
@@ -584,25 +576,28 @@ words. Cars can only move forwards or backwards in the direction they are facing
            }
        }
 
-       function createGameInstance(initialState, index) {
-           const container = document.createElement('div');
-           container.className = 'game-instance';
-           
-           const gameHTML = `
-               <h3>Puzzle ${index}</h3>
-               <div class="game-board"></div>
-               <div class="controls">
-                   <button>Reset</button>
-                   <br>
-                   <p>Moves: <span class="moves">0</span></p>
-               </div>
-           `;
-           
-           container.innerHTML = gameHTML;
-           document.getElementById('all-games-container').appendChild(container);
-           
-           new GameInstance(container, initialState);
-       }
+function createGameInstance(initialState, index) {
+   const container = document.createElement('div');
+   container.id = `game-instance-${index}`;
+   container.className = 'game-instance';
+   
+   const boardId = `game-board-${index}`;
+   
+   const gameHTML = `
+       <h3>Puzzle ${index}</h3>
+       <div class="game-board" id="${boardId}"></div>
+       <div class="controls">
+           <button>Reset</button>
+           <br>
+           <p>Moves: <span class="moves">0</span></p>
+       </div>
+   `;
+   
+   container.innerHTML = gameHTML;
+   document.getElementById('all-games-container').appendChild(container);
+   
+   new GameInstance(container, initialState);
+}
 
        loadBoards();
    </script>
