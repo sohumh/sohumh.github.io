@@ -554,6 +554,25 @@ words. Cars can only move forwards or backwards in the direction they are facing
                            { x: 0, y: 3, horizontal: true, letters: ['U', 'P']},
                            { x: 3, y: 1, horizontal: false, letters: ['X']}
                        ]
+                    },
+                    {
+                       gridSize: {
+                           width: 6,
+                           height: 5
+                       },
+                       redCar: { 
+                           x: 3, y: 1, horizontal: true, color: 'red',
+                           letters: [' ']
+                       },
+                       vehicles: [
+                           { x: 0, y: 0, horizontal: true, letters: ['H', 'O', 'R', 'N']},
+                           { x: 2, y: 1, horizontal: true, letters: ['A']},
+                           { x: 4, y: 1, horizontal: false, letters: ['O', 'R']},
+                           { x: 1, y: 2, horizontal: true, letters: ['T', 'I', 'E']},
+                           { x: 0, y: 3, horizontal: true, letters: ['T']},
+                           { x: 2, y: 3, horizontal: true, letters: ['N']},
+                           { x: 2, y: 4, horizontal: true, letters: ['Y', 'E', 'A']}
+                       ]
                    }
                ];
 
