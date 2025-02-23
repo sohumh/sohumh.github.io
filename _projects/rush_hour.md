@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Word Rush Hour
+title: Word Hour
 description: Rush hour where the cars are words.
 importance: 1
 img: assets/img/rush-hour.png
@@ -152,6 +152,8 @@ words. Cars can only move forwards or backwards in the direction they are facing
            <li>Move the red car horizontally to the exit arrow</li>
            <li>Moves count once per track selection</li>
            <li>All consecutive letters must form valid words</li>
+           <li>The whole grid does not need to be connected</li>
+           <li>Individual letters can stand alone and move both forwards and backwards.</li>
        </ul>
    </div>
 
@@ -160,9 +162,11 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </div>
 
    <script>
+       const PUZZLE_0_WORDS = ['ACHE', 'HEY', 'EASY', 'EASE', 'CASE', 'CASH', 'HASH', 'HAS', 'AS'];
        const PUZZLE_1_WORDS = ['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR', 'OX'];
-       const PUZZLE_2_WORDS = ['HORN', 'TIE', 'YEA', 'OR', 'OAT', 'HAT', 'NOR', 'IN', 'THORN', 'YEAR', 'RAIN', 'RAINY','TIER', 'PINT', 'PIN', 'IN', 'AT', 'IF', 'GNAT', 'BE'];
-       const VALID_WORDS = new Set(PUZZLE_1_WORDS.concat(PUZZLE_2_WORDS));
+       const PUZZLE_2_WORDS = ['HORN', 'TIE', 'YEA', 'OR', 'OAT', 'HAT', 'NOR', 'IN', 'THORN', 'YEAR', 'RAIN', 'RAINY','TIER'];
+       const PUZZLE_3_WORDS = ['PINT', 'PIN', 'IN', 'AT', 'IF', 'GNAT', 'BE'];
+       const VALID_WORDS = new Set(PUZZLE_0_WORDS.concat(PUZZLE_1_WORDS).concat(PUZZLE_2_WORDS).concat(PUZZLE_3_WORDS));
 
 
        class GameInstance {
@@ -539,6 +543,23 @@ words. Cars can only move forwards or backwards in the direction they are facing
        async function loadBoards() {
            try {
                const initialStates = [
+
+                    {
+                       gridSize: {
+                           width: 6,
+                           height: 7
+                       },
+                       redCar: { 
+                           x: 0, y: 4, horizontal: true, color: 'red',
+                           letters: [' ']
+                       },
+                       vehicles: [
+                           {x: 1, y: 1, horizontal: false, letters: ['A', 'C', 'H', 'E']},
+                           {x: 2, y: 4, horizontal: false, letters: ['A']},
+                           {x: 3, y: 4, horizontal: false, letters: ['S']},
+                           {x: 4, y: 2, horizontal: false, letters: ['H', 'E', 'Y']},
+                       ]
+                    },
                      {
                        gridSize: {
                            width: 5,
@@ -549,8 +570,8 @@ words. Cars can only move forwards or backwards in the direction they are facing
                            letters: [' ']
                        },
                        vehicles: [
-                           {x: 0, y: 1, horizontal: true, letters: ['Z']},
-                           {x: 4, y: 1, horizontal: false, letters: ['Q']},
+                           {x: 0, y: 1, horizontal: true, letters: ['E']},
+                           {x: 4, y: 1, horizontal: false, letters: ['L']},
                            { x: 1, y: 0, horizontal: false, letters: ['G']},
                            { x: 3, y: 2, horizontal: false, letters: ['F']},
                            { x: 2, y: 1, horizontal: true, letters: ['P']},
