@@ -149,7 +149,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
        <ul>
            <li>Click a vehicle to select it</li>
            <li>Use the keyboard arrow keys to move selected vehicle</li>
-           <li>Get the red car to the exit arrow</li>
+           <li>Move the red car horizontally to the exit arrow</li>
            <li>Moves count once per track selection</li>
            <li>All consecutive letters must form valid words</li>
        </ul>
