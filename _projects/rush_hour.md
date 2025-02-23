@@ -162,7 +162,7 @@ words. Cars can only move forwards or backwards in the direction they are facing
    </div>
 
    <script>
-       const PUZZLE_0_WORDS = ['ACHE', 'HEY', 'EASY', 'EASE', 'CASE', 'CASH', 'HASH', 'HAS', 'AS'];
+       const PUZZLE_0_WORDS = ['ACRE', 'RASH', 'HEY', 'EASY', 'EASE', 'CASE', 'CASH', 'HASH', 'HAS', 'AS', 'ASH', 'OWE', 'WE', 'MY', 'WHEY'];
        const PUZZLE_1_WORDS = ['EAR', 'ON', 'UP', 'AT', 'TO', 'AX', 'ATOP', 'TOP', 'TEAR', 'OX'];
        const PUZZLE_2_WORDS = ['HORN', 'TIE', 'YEA', 'OR', 'OAT', 'HAT', 'NOR', 'IN', 'THORN', 'YEAR', 'RAIN', 'RAINY','TIER'];
        const PUZZLE_3_WORDS = ['PINT', 'PIN', 'IN', 'AT', 'IF', 'GNAT', 'BE'];
@@ -554,10 +554,12 @@ words. Cars can only move forwards or backwards in the direction they are facing
                            letters: [' ']
                        },
                        vehicles: [
-                           {x: 1, y: 1, horizontal: false, letters: ['A', 'C', 'H', 'E']},
+                           {x: 1, y: 1, horizontal: false, letters: ['A', 'C', 'R', 'E']},
                            {x: 2, y: 4, horizontal: false, letters: ['A']},
                            {x: 3, y: 4, horizontal: false, letters: ['S']},
                            {x: 4, y: 2, horizontal: false, letters: ['H', 'E', 'Y']},
+                           {x: 2, y: 6, horizontal: true        , letters: ['M']},
+                           {x: 2, y: 0, horizontal: true, letters: ['O', 'W', 'E']},
                        ]
                     },
                      {
