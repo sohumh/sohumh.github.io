@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Rank 'Em
+title: Rank Em
 description: Who knows what their friends like the best?
 # img: assets/img/escaperoom.png
 importance: 1
