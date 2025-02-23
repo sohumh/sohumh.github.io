@@ -254,10 +254,13 @@ words. Cars can only move forwards or backwards in the direction they are facing
         #${boardId} .vehicle-${index}-end.vertical .vehicle-container {
             border-radius: 0 0 25px 25px;
         }
+        #${boardId} .vehicle-red-start.horizontal .vehicle-container {
+            border-radius: 0 25px 25px 0;
+        }
     `).join('\n');
 
     styleEl.textContent += this.gameState.vehicles.map((vehicle, index) => {
-        const blueShade = Math.max(30, 65 - (index * 10));
+        const blueShade = Math.max(20, 80 - (index * 5));
         return `
             #${boardId} .car.vehicle-${index} .vehicle-container {
                 background-color: hsl(210, 80%, ${blueShade}%);

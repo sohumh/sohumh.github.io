@@ -3,7 +3,7 @@ layout: page
 permalink: /resume/
 title: resume
 description: There's no point re-inventing the wheel to highlight what I've done.
-nav: false
+nav: true
 ---
 
 <object data="/assets/pdf/sohum-hulyalkar-resume.pdf" type="application/pdf" width="700px" height="700px">

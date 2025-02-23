@@ -2,12 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: sohum11 (at) berkeley (dot) edu
+subtitle: sohum511 (at) gmail (dot) com
 
 profile:
   align: right
   image: prof_pic.png
 
+latest_posts: false
 news: false  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
