@@ -169,7 +169,6 @@ const PUZZLE_2_WORDS = ['HORN', 'TIE', 'YEA', 'OR', 'OAT', 'HAT', 'NOR', 'IN', '
 const PUZZLE_3_WORDS = ['PINT', 'PIN', 'IN', 'AT', 'IF', 'GNAT', 'BE'];
 const VALID_WORDS = new Set(PUZZLE_0_WORDS.concat(PUZZLE_1_WORDS).concat(PUZZLE_2_WORDS).concat(PUZZLE_3_WORDS));
 
-
 class GameInstance {
     constructor(container, initialState) {
         this.container = container;
@@ -440,7 +439,7 @@ class GameInstance {
                 this.container.querySelector('.moves').textContent = this.moveCount;
                 this.selectedVehicle = null;
                 this.lastTrack = null;
-                alert(`Invalid word: ${this.invalidWord}`);
+                alert(`Invalid word formation: ${this.invalidWord}`);
                 this.createBoard();
                 return;
             }
