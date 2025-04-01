@@ -25,6 +25,7 @@
           <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
         {% endif %}
       {% endif %}
+      
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
           <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
@@ -127,8 +128,8 @@
                 if (++cursorPosition == more_authors_text.length){
                   clearInterval(textAdder);
                 }
-            }, '{{ site.more_authors_animation_delay }}');
-          "
+              }, '{{ site.more_authors_animation_delay }}');
+            "
         >
           {{- more_authors_hide -}}
         </span>
@@ -215,6 +216,9 @@
           <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
         {% endif %}
       {% endif %}
+      {% if entry.guide %}
+        <a href="{{ entry.guide | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Guide</a>
+      {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
           <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
@@ -246,6 +250,9 @@
         {% else %}
           <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
         {% endif %}
+      {% endif %}
+      {% if entry.solutions %}
+        <a href="{{ entry.solutions | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Solutions</a>
       {% endif %}
       {% if entry.website %}
         <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
