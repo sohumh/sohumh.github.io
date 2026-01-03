@@ -1,13 +1,13 @@
 ---
 layout: page
 title: Letter Jigsaw Puzzles
-description: Place letter pieces to form words in each row
+description: Place letter pieces in the grid so each row forms a word
 img: assets/img/jigsaw.png
 importance: 1
 category: puzzles
 ---
 
-Insert the pieces in the grid so each row forms a word. Pieces should not be rotated, and only the rows must form words—not the columns. Drag and drop pieces from the piece area into the grid.
+Insert the pieces in the square grid so each row forms a word. Pieces should not be rotated, and only the rows must form words—not the columns. Drag and drop pieces from the piece area into the grid.
 
 <html>
 <head>
@@ -883,6 +883,7 @@ Insert the pieces in the grid so each row forms a word. Pieces should not be rot
 
                this.updateBoard();
                this.renderPieces();
+               this.clearValidation();
            }
 
            removePiece(x, y) {
@@ -1037,7 +1038,7 @@ Insert the pieces in the grid so each row forms a word. Pieces should not be rot
        const puzzles = [
            {
                name: "Puzzle 1: 3×3",
-               difficulty: "easy",
+               difficulty: "Easy",
                targetTime: "1 minute",
                hint: "the final words will always form a phrase",
                gridSize: { width: 3, height: 3 },
@@ -1052,7 +1053,7 @@ Insert the pieces in the grid so each row forms a word. Pieces should not be rot
            },
            {
                name: "Puzzle 2: 4×4",
-               difficulty: "easy",
+               difficulty: "Easy",
                targetTime: "3 minutes",
                hint: null,
                gridSize: { width: 4, height: 4 },
@@ -1069,8 +1070,8 @@ Insert the pieces in the grid so each row forms a word. Pieces should not be rot
            },
            {
                name: "Puzzle 3: 5×5",
-               difficulty: "medium",
-               targetTime: "5 minutes",
+               difficulty: "Medium",
+               targetTime: "4 minutes",
                hint: null,
                gridSize: { width: 5, height: 5 },
                pieces: [
@@ -1089,8 +1090,8 @@ Insert the pieces in the grid so each row forms a word. Pieces should not be rot
            },
            {
                name: "Puzzle 4: 6×6",
-               difficulty: "medium",
-               targetTime: "7 minutes",
+               difficulty: "Medium",
+               targetTime: "6 minutes",
                hint: null,
                gridSize: { width: 6, height: 6 },
                pieces: [
