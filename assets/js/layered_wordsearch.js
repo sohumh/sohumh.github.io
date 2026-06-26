@@ -18,6 +18,7 @@ class LayeredWordSearch {
 
     this.puzzle = null;
     this.finalMessage = 'WHALEDONEYOUBEAST';
+    this.finalMessageSpaceBefore = new Set([5, 9, 12]);
     this.timerStartedAt = null;
     this.timerInterval = null;
     this.elapsedSeconds = 0;
@@ -146,7 +147,10 @@ class LayeredWordSearch {
       this.candidateMatch = null;
       this.resetTimer();
       this.applyTestOneWordLeft();
-      if (this.finalMessageDisplay) this.finalMessageDisplay.textContent = '';
+      if (this.finalMessageDisplay) {
+        this.finalMessageDisplay.textContent = '';
+        this.finalMessageDisplay.classList.remove('active');
+      }
       this.renderBoard();
       this.renderLegend();
       this.renderWords();
@@ -373,29 +377,35 @@ class LayeredWordSearch {
       for (let col = 0; col < this.puzzle.cols; col += 1) {
         const visible = this.visibleAt(row, col);
         if (visible.letter) {
-          cells.push({ row, col, letter: visible.letter, delay: cells.length * 230 });
+          cells.push({ row, col, letter: visible.letter, delay: cells.length * 340 });
         }
       }
     }
     return cells;
   }
 
-  appendFinalMessageLetter(letter) {
+  appendFinalMessageLetter(letter, index) {
     if (!this.finalMessageDisplay) return;
+    if (this.finalMessageSpaceBefore.has(index)) {
+      this.finalMessageDisplay.appendChild(document.createTextNode(' '));
+    }
     const span = document.createElement('span');
     span.textContent = letter;
     this.finalMessageDisplay.appendChild(span);
   }
 
   showFinalMessage() {
-    if (this.finalMessageDisplay) this.finalMessageDisplay.textContent = '';
-    this.finalMessageCells().forEach(({ row, col, letter, delay }) => {
+    if (this.finalMessageDisplay) {
+      this.finalMessageDisplay.textContent = '';
+      this.finalMessageDisplay.classList.add('active');
+    }
+    this.finalMessageCells().forEach(({ row, col, letter, delay }, index) => {
       const cell = this.board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
       if (!cell) return;
       window.setTimeout(() => {
         cell.classList.remove('empty', 'selected', 'valid', 'invalid');
         cell.classList.add('final-message');
-        this.appendFinalMessageLetter(letter);
+        this.appendFinalMessageLetter(letter, index);
       }, delay);
     });
   }

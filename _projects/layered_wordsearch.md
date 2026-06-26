@@ -8,7 +8,7 @@ category: standalone puzzles
 
 <link rel="stylesheet" href="{{ '/assets/css/layered_wordsearch.css' | relative_url }}">
 
-<div class="layered-wordsearch" data-layered-wordsearch data-lws-test-one-word-left="YAK">
+<div class="layered-wordsearch" data-layered-wordsearch>
   <p>
     Drag across the grid to find an animal. When you find a valid word, those letters disappear and reveal letters from the next layer underneath.
   </p>
@@ -66,11 +66,11 @@ Y.......
         <span class="lws-pill">Selected: <strong data-lws-selected-word>—</strong></span>
         <span class="lws-pill" data-lws-validity>Waiting for selection</span>
       </div>
+      <div class="lws-final-message" data-lws-final-message aria-live="polite"></div>
       <div class="lws-board-wrap">
         <div class="lws-board" data-lws-board aria-label="Layered word search board"></div>
       </div>
       <div class="lws-legend" data-lws-legend></div>
-      <div class="lws-final-message" data-lws-final-message aria-live="polite"></div>
       <div class="lws-actions">
         <button class="lws-button secondary" data-lws-reset type="button">Reset puzzle</button>
       </div>
