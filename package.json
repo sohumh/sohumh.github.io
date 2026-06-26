@@ -1,6 +1,12 @@
 {
+  "scripts": {
+    "test:layered-wordsearch": "node tests/layered_wordsearch.test.js",
+    "test:layered-wordsearch-animals-ui": "node tests/layered_wordsearch_animals_ui.test.js",
+    "test:layered-wordsearch-generator": "python3 tests/layered_wordsearch_generator_test.py"
+  },
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "1.4.0",
+    "jsdom": "^29.1.1",
     "prettier": "3.1.1"
   }
 }
