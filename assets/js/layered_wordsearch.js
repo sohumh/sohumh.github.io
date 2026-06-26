@@ -241,7 +241,7 @@ class LayeredWordSearch {
 
   renderBoard(justSolvedCells = []) {
     this.board.innerHTML = '';
-    this.board.style.gridTemplateColumns = `repeat(${this.puzzle.cols}, clamp(34px, 8vw, 56px))`;
+    this.board.style.gridTemplateColumns = `repeat(${this.puzzle.cols}, var(--lws-cell-size))`;
 
     for (let row = 0; row < this.puzzle.rows; row += 1) {
       for (let col = 0; col < this.puzzle.cols; col += 1) {
