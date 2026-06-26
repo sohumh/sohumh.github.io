@@ -34,7 +34,7 @@ class LayeredWordSearch {
 
   bindEvents() {
     this.buildButton.addEventListener('click', () => this.buildPuzzle());
-    this.resetButton.addEventListener('click', () => this.buildPuzzle());
+    if (this.resetButton) this.resetButton.addEventListener('click', () => this.buildPuzzle());
 
     this.board.addEventListener('pointerdown', (event) => {
       if (!this.puzzle) return;

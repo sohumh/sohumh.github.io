@@ -63,9 +63,6 @@ LCFEATBZ</textarea>
         <div class="lws-board" data-lws-board aria-label="Layered word search board"></div>
       </div>
       <div class="lws-legend" data-lws-legend></div>
-      <div class="lws-actions">
-        <button class="lws-button secondary" data-lws-reset type="button">Reset puzzle</button>
-      </div>
       <h3 style="margin-top: 1rem">Words</h3>
       <ul class="lws-word-list" data-lws-word-list></ul>
     </section>
