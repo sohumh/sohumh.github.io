@@ -194,10 +194,10 @@ class LayeredWordSearch {
   }
 
   rankFor(seconds) {
-    if (seconds <= 8 * 60) return 'Genius';
-    if (seconds <= 12 * 60) return 'Amazing';
-    if (seconds <= 16 * 60) return 'Great';
-    if (seconds <= 20 * 60) return 'Nice';
+    if (seconds <= 10 * 60) return 'Genius';
+    if (seconds <= 15 * 60) return 'Amazing';
+    if (seconds <= 20 * 60) return 'Great';
+    if (seconds <= 25 * 60) return 'Nice';
     return 'Complete';
   }
 
@@ -229,7 +229,7 @@ class LayeredWordSearch {
     this.elapsedSeconds = 0;
     if (this.timer) this.timer.textContent = '0:00';
     if (this.rank) {
-      this.rank.textContent = 'Targets: 8 / 12 / 16 / 20 min';
+      this.rank.textContent = 'Targets: 10 / 15 / 20 / 25 min';
       this.rank.className = 'lws-pill';
     }
   }
