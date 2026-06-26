@@ -107,7 +107,7 @@ class LayeredWordSearch {
 
   parseWords(text) {
     const words = text.split(/[\s,]+/).map((word) => this.normalizeWord(word)).filter(Boolean);
-    return Array.from(new Set(words));
+    return Array.from(new Set(words)).sort((a, b) => a.localeCompare(b));
   }
 
   parsePlacements() {
