@@ -57,5 +57,5 @@ for (const placement of [...puzzle.placements].reverse()) {
 
 assert.strictEqual(game.puzzle.found.size, puzzle.words.length, 'all animal words should be solved');
 assert.match(root.querySelector('[data-lws-status]').textContent, /Congrats, you solved the puzzle/);
-assert(!puzzle.finalMessage, 'animal puzzle should not use a hidden final message');
+assert.strictEqual(game.finalVisibleText(), 'WHALEDONEYOUBEAST');
 console.log('Layered animal word search full UI solve test passed.');

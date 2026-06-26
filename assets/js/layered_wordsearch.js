@@ -366,25 +366,23 @@ class LayeredWordSearch {
   }
 
   finalMessageCells() {
-    const start = this.puzzle.rows * this.puzzle.cols - this.finalMessage.length;
-    return this.finalMessage.split('').map((letter, index) => {
-      const cellIndex = start + index;
-      return {
-        letter,
-        row: Math.floor(cellIndex / this.puzzle.cols),
-        col: cellIndex % this.puzzle.cols,
-        delay: index * 70
-      };
-    });
+    const cells = [];
+    for (let row = 0; row < this.puzzle.rows; row += 1) {
+      for (let col = 0; col < this.puzzle.cols; col += 1) {
+        const visible = this.visibleAt(row, col);
+        if (visible.letter) {
+          cells.push({ row, col, delay: cells.length * 70 });
+        }
+      }
+    }
+    return cells;
   }
 
   showFinalMessage() {
-    this.finalMessageCells().forEach(({ letter, row, col, delay }) => {
+    this.finalMessageCells().forEach(({ row, col, delay }) => {
       const cell = this.board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
       if (!cell) return;
       window.setTimeout(() => {
-        cell.textContent = letter;
-        cell.dataset.depthLabel = '';
         cell.classList.remove('empty', 'selected', 'valid', 'invalid');
         cell.classList.add('final-message');
       }, delay);
