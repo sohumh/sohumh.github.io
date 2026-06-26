@@ -35,11 +35,11 @@ html[data-theme="dark"] .layered-wordsearch {
 }
 
 .lws-panel {
-  border: 0;
-  border-radius: 0;
-  padding: 0;
+  border: 1px solid var(--lws-border);
+  border-radius: 16px;
+  padding: 1rem;
   margin-bottom: 1rem;
-  background: transparent;
+  background: var(--lws-panel-bg);
 }
 
 .lws-grid-layout {
@@ -48,7 +48,7 @@ html[data-theme="dark"] .layered-wordsearch {
 
 .lws-game-panel {
   max-width: 980px;
-  margin: 1.5rem auto 1rem;
+  margin: 0 auto 1rem;
 }
 
 .lws-hidden-config {
@@ -87,37 +87,6 @@ html[data-theme="dark"] .layered-wordsearch {
   margin-top: 0.75rem;
 }
 
-.lws-readout {
-  justify-content: flex-end;
-  padding: 0.35rem 0 0.8rem;
-  border-bottom: 1px solid var(--lws-border);
-  position: sticky;
-  top: 0.25rem;
-  z-index: 5;
-  backdrop-filter: blur(10px);
-}
-
-.lws-selected-pill,
-.lws-validity-pill { order: 1; }
-.lws-timer-pill,
-.lws-rank-pill { order: 2; }
-.lws-validity-pill { margin-right: auto; }
-
-@media (max-width: 760px) {
-  .lws-readout {
-    justify-content: flex-start;
-    position: static;
-  }
-
-  .lws-selected-pill,
-  .lws-validity-pill,
-  .lws-timer-pill,
-  .lws-rank-pill {
-    order: initial;
-    margin-right: 0;
-  }
-}
-
 .lws-button {
   border: 0;
   border-radius: 999px;
@@ -135,7 +104,7 @@ html[data-theme="dark"] .layered-wordsearch {
 
 .lws-board-wrap {
   overflow: auto;
-  padding: 1.25rem 0.1rem 1rem;
+  padding: 0.35rem 0.1rem 0.75rem;
 }
 
 .lws-board {
@@ -207,9 +176,7 @@ html[data-theme="dark"] .layered-wordsearch {
 .lws-status {
   min-height: 1.5rem;
   font-weight: 700;
-  margin: 0.5rem 0 0;
-  padding-left: 0.8rem;
-  border-left: 3px solid var(--lws-accent);
+  margin: 0.5rem 0;
 }
 
 .lws-status.good { color: var(--lws-good); }
@@ -220,9 +187,8 @@ html[data-theme="dark"] .layered-wordsearch {
   border: 1px solid var(--lws-border);
   border-radius: 999px;
   padding: 0.25rem 0.65rem;
-  background: color-mix(in srgb, var(--lws-pill-bg) 92%, transparent);
+  background: var(--lws-pill-bg);
   font-weight: 700;
-  font-size: 0.92rem;
 }
 
 .lws-pill.good { border-color: rgba(22, 128, 60, 0.4); background: #e9f8ee; color: var(--lws-good); }
@@ -238,12 +204,11 @@ html[data-theme="dark"] .layered-wordsearch {
 }
 
 .lws-word-list li {
-  border: 1px solid transparent;
-  border-radius: 6px;
-  padding: 0.12rem 0.35rem;
-  background: transparent;
+  border: 1px solid var(--lws-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  background: var(--lws-pill-bg);
   font-weight: 700;
-  font-size: 0.95rem;
   transition: opacity 150ms ease, background 150ms ease, transform 150ms ease;
 }
 

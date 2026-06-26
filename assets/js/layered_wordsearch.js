@@ -224,9 +224,9 @@ class LayeredWordSearch {
       const lightness = 34 - 8 * t;
       return `hsl(${hue} ${saturation}% ${lightness}%)`;
     }
-    const hue = 205 + (212 - 205) * t;
-    const saturation = 72 - 6 * t;
-    const lightness = 91 - 6 * t;
+    const hue = 208 + (218 - 208) * t;
+    const saturation = 76 - 8 * t;
+    const lightness = 88 - 8 * t;
     return `hsl(${hue} ${saturation}% ${lightness}%)`;
   }
 
