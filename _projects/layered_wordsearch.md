@@ -6,7 +6,7 @@ importance: 2
 category: standalone puzzles
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/layered_wordsearch.css' | relative_url }}">
+<link rel="stylesheet" href="/assets/css/layered_wordsearch.css">
 
 <div class="layered-wordsearch" data-layered-wordsearch>
   <p>
@@ -71,4 +71,4 @@ LCFEATBZ</textarea>
   </div>
 </div>
 
-<script src="{{ '/assets/js/layered_wordsearch.js' | relative_url }}"></script>
+<script src="/assets/js/layered_wordsearch.js"></script>
