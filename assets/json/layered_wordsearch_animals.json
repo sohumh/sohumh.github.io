@@ -1,49 +1,39 @@
 {
   "rows": 8,
   "cols": 8,
-  "layerCount": 4,
-  "solutionLayerCount": 4,
-  "finalMessage": "WHALEDONEYOUBEAST",
+  "layerCount": 3,
+  "solutionLayerCount": 3,
+  "finalMessage": "WHALEDONEYOUGOAT",
   "layers": [
     [
       "FISHBAUD",
       "OLGOEMOD",
       "XNAOEBIA",
       "HLAACINR",
-      "BSEAGTKG",
+      "BSNAGTKG",
       "REOYOOAT",
       "SCAOELAB",
       "EECRGCOW"
     ],
     [
       "FORRKNRC",
-      "EBAATGRE",
-      "DAEIALRE",
+      "EBHATGRE",
+      "EAEIALRE",
       "EBBDGABA",
-      "AAQFBTYR",
+      "AAQFBTER",
       "ETOUOCCO",
-      "BHAMBNUR",
-      "GCAKOCDF"
+      "UHAMBNUR",
+      "GCOKOCDF"
     ],
     [
-      "TAKWAPDH",
-      "OHBGOLAE",
+      "TYAKAPDW",
+      "OHBGOAAL",
       "OLIHPXOD",
-      "OTAROERN",
-      "OEILVSAO",
-      "BEOFFEUB",
-      "ETOFEURE",
-      "LCFESTBZ"
-    ],
-    [
-      "Y.......",
-      "........",
-      "........",
-      "........",
-      "........",
-      "........",
-      "........",
-      "........"
+      "DTAROERO",
+      "OEILVSAY",
+      "BEOFFEOB",
+      "ETOFGURE",
+      "LCFEATBZ"
     ]
   ],
   "words": [
@@ -88,13 +78,9 @@
     {
       "word": "YAK",
       "row": 0,
-      "col": 0,
+      "col": 1,
       "direction": "E",
       "path": [
-        [
-          0,
-          0
-        ],
         [
           0,
           1
@@ -102,15 +88,19 @@
         [
           0,
           2
+        ],
+        [
+          0,
+          3
         ]
       ],
       "stack_heights_before": [
-        3,
+        2,
         2,
         2
       ],
       "final_layers_top_to_bottom": [
-        3,
+        2,
         2,
         2
       ]
@@ -1520,6 +1510,6 @@
       ]
     }
   ],
-  "layerText": "FISHBAUD\nOLGOEMOD\nXNAOEBIA\nHLAACINR\nBSEAGTKG\nREOYOOAT\nSCAOELAB\nEECRGCOW\n\nFORRKNRC\nEBAATGRE\nDAEIALRE\nEBBDGABA\nAAQFBTYR\nETOUOCCO\nBHAMBNUR\nGCAKOCDF\n\nTAKWAPDH\nOHBGOLAE\nOLIHPXOD\nOTAROERN\nOEILVSAO\nBEOFFEUB\nETOFEURE\nLCFESTBZ\n\nY.......\n........\n........\n........\n........\n........\n........\n........",
+  "layerText": "FISHBAUD\nOLGOEMOD\nXNAOEBIA\nHLAACINR\nBSNAGTKG\nREOYOOAT\nSCAOELAB\nEECRGCOW\n\nFORRKNRC\nEBHATGRE\nEAEIALRE\nEBBDGABA\nAAQFBTER\nETOUOCCO\nUHAMBNUR\nGCOKOCDF\n\nTYAKAPDW\nOHBGOAAL\nOLIHPXOD\nDTAROERO\nOEILVSAY\nBEOFFEOB\nETOFGURE\nLCFEATBZ",
   "wordText": "ANT AXOLOTL BABOON BADGER BAT BEAR BEAVER BIRD BISON BOBCAT BUFFALO CAMEL CAT CHEETAH COUGAR COW COYOTE CRAB DEER DOG DOLPHIN DUCK EAGLE EMU FISH FOX FROG GECKO GIRAFFE GOOSE HORSE KOALA PARROT YAK ZEBRA"
 }

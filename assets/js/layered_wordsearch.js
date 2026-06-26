@@ -17,7 +17,7 @@ class LayeredWordSearch {
     this.placementsInput = root.querySelector('[data-lws-placements]');
 
     this.puzzle = null;
-    this.finalMessage = 'WHALEDONEYOUBEAST';
+    this.finalMessage = 'WHALEDONEYOUGOAT';
     this.finalMessageSpaceBefore = new Set([5, 9, 12]);
     this.timerStartedAt = null;
     this.timerInterval = null;
@@ -42,7 +42,7 @@ class LayeredWordSearch {
       if (!cell) return;
       event.preventDefault();
       this.startTimer();
-      this.board.setPointerCapture?.(event.pointerId);
+      if (this.board.setPointerCapture) this.board.setPointerCapture(event.pointerId);
       this.isDragging = true;
       this.dragStart = cell;
       this.selected = [cell];
@@ -167,11 +167,13 @@ class LayeredWordSearch {
   }
 
   applyTestOneWordLeft() {
-    const target = this.normalizeWord(this.root.dataset.lwsTestOneWordLeft || new URLSearchParams(window.location.search).get('lws_test_last') || '');
-    if (!target || !this.puzzle.placements.length) return;
+    const params = new URLSearchParams(window.location.search);
+    const testWordsRaw = this.root.dataset.lwsTestWordsLeft || params.get('lws_test_left') || this.root.dataset.lwsTestOneWordLeft || params.get('lws_test_last') || '';
+    const targets = new Set(testWordsRaw.split(/[\s,]+/).map((word) => this.normalizeWord(word)).filter(Boolean));
+    if (!targets.size || !this.puzzle.placements.length) return;
 
     this.puzzle.placements.forEach((placement) => {
-      if (placement.word === target) return;
+      if (targets.has(placement.word)) return;
       placement.path.forEach(({ row, col }, index) => {
         const depth = placement.finalLayers[index];
         if (typeof depth === 'number' && this.puzzle.removed[depth]) {
@@ -352,7 +354,7 @@ class LayeredWordSearch {
   cellFromEvent(event) {
     const point = event.touches ? event.touches[0] : event;
     const el = document.elementFromPoint(point.clientX, point.clientY);
-    const cell = el?.closest?.('.lws-cell');
+    const cell = el && el.closest ? el.closest('.lws-cell') : null;
     if (!cell || !this.board.contains(cell) || cell.classList.contains('empty')) return null;
     return { row: Number(cell.dataset.row), col: Number(cell.dataset.col) };
   }
@@ -489,7 +491,7 @@ class LayeredWordSearch {
           this.rank.className = 'lws-pill good';
         }
         this.showFinalMessage();
-        this.setStatus(`Congrats, you solved the puzzle in ${this.formatTime(this.elapsedSeconds)} — ${rank}! Whale done, you beast!`, 'good');
+        this.setStatus(`Congrats, you solved the puzzle in ${this.formatTime(this.elapsedSeconds)} — ${rank}! Whale done, you GOAT!`, 'good');
         this.setReadout(match.word, 'Puzzle complete', 'good');
       } else {
         this.setStatus(`Solved ${match.word}! Letters from the next layer underneath are now visible.`, 'good');
