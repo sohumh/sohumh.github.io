@@ -1,8 +1,8 @@
 {
   "rows": 8,
   "cols": 8,
-  "layerCount": 3,
-  "solutionLayerCount": 3,
+  "layerCount": 4,
+  "solutionLayerCount": 4,
   "finalMessage": "",
   "layers": [
     [
@@ -16,24 +16,34 @@
       "EECRGCOW"
     ],
     [
-      "FESRKNRC",
+      "FORRKNRC",
       "EBMATGRE",
       "UAEIALRE",
       "EBBDGABA",
-      "AAQFBTOM",
+      "AAQFBTOR",
       "ETOUOCCO",
       "LHAMBNUR",
       "GCWKOCDF"
     ],
     [
-      "IODAAODM",
+      "TAKAAPDM",
       "OHBGODAP",
       "OLIHPXOD",
       "ATAROERR",
       "OEILVSAO",
-      "BEOFFEMU",
-      "ETOFKURO",
-      "LCFEIUBW"
+      "BEOFFEMB",
+      "ETOFKURE",
+      "LCFEIUBZ"
+    ],
+    [
+      "Y.......",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
     ]
   ],
   "words": [
@@ -68,10 +78,133 @@
     "GIRAFFE",
     "GOOSE",
     "HORSE",
-    "KOALA"
+    "KOALA",
+    "PARROT",
+    "YAK",
+    "ZEBRA"
   ],
   "skipped": [],
   "placements": [
+    {
+      "word": "YAK",
+      "row": 0,
+      "col": 0,
+      "direction": "E",
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "stack_heights_before": [
+        3,
+        2,
+        2
+      ],
+      "final_layers_top_to_bottom": [
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "word": "ZEBRA",
+      "row": 7,
+      "col": 7,
+      "direction": "N",
+      "path": [
+        [
+          7,
+          7
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "stack_heights_before": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ],
+      "final_layers_top_to_bottom": [
+        2,
+        2,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "word": "PARROT",
+      "row": 0,
+      "col": 5,
+      "direction": "W",
+      "path": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "stack_heights_before": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "final_layers_top_to_bottom": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        2
+      ]
+    },
     {
       "word": "AXOLOTL",
       "row": 1,
@@ -1387,6 +1520,6 @@
       ]
     }
   ],
-  "layerText": "FISHBAUD\nOLGOEMOD\nXNAOEBIA\nHLAACINR\nBSAAGTKG\nREOYOOAT\nSCAOELAB\nEECRGCOW\n\nFESRKNRC\nEBMATGRE\nUAEIALRE\nEBBDGABA\nAAQFBTOM\nETOUOCCO\nLHAMBNUR\nGCWKOCDF\n\nIODAAODM\nOHBGODAP\nOLIHPXOD\nATAROERR\nOEILVSAO\nBEOFFEMU\nETOFKURO\nLCFEIUBW",
-  "wordText": "ANT AXOLOTL BABOON BADGER BAT BEAR BEAVER BIRD BISON BOBCAT BUFFALO CAMEL CAT CHEETAH COUGAR COW COYOTE CRAB DEER DOG DOLPHIN DUCK EAGLE EMU FISH FOX FROG GECKO GIRAFFE GOOSE HORSE KOALA"
+  "layerText": "FISHBAUD\nOLGOEMOD\nXNAOEBIA\nHLAACINR\nBSAAGTKG\nREOYOOAT\nSCAOELAB\nEECRGCOW\n\nFORRKNRC\nEBMATGRE\nUAEIALRE\nEBBDGABA\nAAQFBTOR\nETOUOCCO\nLHAMBNUR\nGCWKOCDF\n\nTAKAAPDM\nOHBGODAP\nOLIHPXOD\nATAROERR\nOEILVSAO\nBEOFFEMB\nETOFKURE\nLCFEIUBZ\n\nY.......\n........\n........\n........\n........\n........\n........\n........",
+  "wordText": "ANT AXOLOTL BABOON BADGER BAT BEAR BEAVER BIRD BISON BOBCAT BUFFALO CAMEL CAT CHEETAH COUGAR COW COYOTE CRAB DEER DOG DOLPHIN DUCK EAGLE EMU FISH FOX FROG GECKO GIRAFFE GOOSE HORSE KOALA PARROT YAK ZEBRA"
 }

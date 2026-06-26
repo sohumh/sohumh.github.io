@@ -34,7 +34,7 @@ const game = new window.LayeredWordSearch(root);
 
 assert.strictEqual(game.puzzle.rows, 8);
 assert.strictEqual(game.puzzle.cols, 8);
-assert.strictEqual(game.puzzle.layers.length, 3);
+assert.strictEqual(game.puzzle.layers.length, puzzle.layerCount);
 assert.strictEqual(root.querySelectorAll('.lws-cell').length, 64);
 assert.strictEqual(root.querySelectorAll('[data-lws-word-list] li').length, puzzle.words.length);
 
