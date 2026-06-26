@@ -2,6 +2,7 @@
 layout: page
 title: Layered Word Search
 description: Find hidden words by excavating stacked word-search layers.
+img: assets/img/layered_wordsearch.png
 importance: 2
 category: standalone puzzles
 ---

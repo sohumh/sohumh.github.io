@@ -16,6 +16,7 @@
   --lws-bad: #a83232;
   margin-top: 1rem;
   color: var(--lws-text);
+  overflow-anchor: none;
 }
 
 html[data-theme="dark"] .layered-wordsearch {
@@ -106,6 +107,8 @@ html[data-theme="dark"] .layered-wordsearch {
 .lws-board-wrap {
   overflow: auto;
   padding: 1rem 0.1rem 0.75rem;
+  overscroll-behavior: contain;
+  overflow-anchor: none;
 }
 
 .lws-board {
@@ -115,6 +118,7 @@ html[data-theme="dark"] .layered-wordsearch {
   touch-action: none;
   width: max-content;
   margin: 0 auto;
+  overflow-anchor: none;
 }
 
 .lws-cell {
@@ -130,6 +134,7 @@ html[data-theme="dark"] .layered-wordsearch {
   cursor: pointer;
   position: relative;
   transition: transform 90ms ease, outline-color 120ms ease, box-shadow 120ms ease, background 180ms ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .lws-cell::after {
@@ -188,9 +193,11 @@ html[data-theme="dark"] .layered-wordsearch {
 }
 
 .lws-status {
-  min-height: 1.5rem;
+  min-height: 3rem;
   font-weight: 700;
   margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
 }
 
 .lws-status.good { color: var(--lws-good); }
