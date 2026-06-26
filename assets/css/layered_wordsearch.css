@@ -169,7 +169,7 @@ html[data-theme="dark"] .layered-wordsearch {
 .lws-cell.just-solved { animation: lws-pop 450ms ease; }
 
 .lws-cell.final-message {
-  animation: lws-final-reveal 650ms ease both;
+  animation: lws-final-reveal 1400ms ease both;
   background: linear-gradient(135deg, #fde68a, #f59e0b) !important;
   color: #111827 !important;
   border-color: rgba(245, 158, 11, 0.65);
@@ -236,6 +236,26 @@ html[data-theme="dark"] .layered-wordsearch {
   transform: translateY(-1px);
   border-color: #20c064;
   box-shadow: 0 0 0 3px rgba(32, 192, 100, 0.13);
+}
+
+.lws-final-message {
+  min-height: 2.25rem;
+  margin-top: 0.8rem;
+  font-size: clamp(1.1rem, 4vw, 1.75rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-align: center;
+  color: var(--lws-accent-dark);
+}
+
+.lws-final-message span {
+  display: inline-block;
+  animation: lws-final-letter 700ms ease both;
+}
+
+@keyframes lws-final-letter {
+  0% { opacity: 0; transform: translateY(0.35rem) scale(0.9); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .lws-legend {

@@ -13,6 +13,7 @@ class LayeredWordSearch {
     this.validity = root.querySelector('[data-lws-validity]');
     this.timer = root.querySelector('[data-lws-timer]');
     this.rank = root.querySelector('[data-lws-rank]');
+    this.finalMessageDisplay = root.querySelector('[data-lws-final-message]');
     this.placementsInput = root.querySelector('[data-lws-placements]');
 
     this.puzzle = null;
@@ -145,6 +146,7 @@ class LayeredWordSearch {
       this.candidateMatch = null;
       this.resetTimer();
       this.applyTestOneWordLeft();
+      if (this.finalMessageDisplay) this.finalMessageDisplay.textContent = '';
       this.renderBoard();
       this.renderLegend();
       this.renderWords();
@@ -371,20 +373,29 @@ class LayeredWordSearch {
       for (let col = 0; col < this.puzzle.cols; col += 1) {
         const visible = this.visibleAt(row, col);
         if (visible.letter) {
-          cells.push({ row, col, delay: cells.length * 70 });
+          cells.push({ row, col, letter: visible.letter, delay: cells.length * 230 });
         }
       }
     }
     return cells;
   }
 
+  appendFinalMessageLetter(letter) {
+    if (!this.finalMessageDisplay) return;
+    const span = document.createElement('span');
+    span.textContent = letter;
+    this.finalMessageDisplay.appendChild(span);
+  }
+
   showFinalMessage() {
-    this.finalMessageCells().forEach(({ row, col, delay }) => {
+    if (this.finalMessageDisplay) this.finalMessageDisplay.textContent = '';
+    this.finalMessageCells().forEach(({ row, col, letter, delay }) => {
       const cell = this.board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
       if (!cell) return;
       window.setTimeout(() => {
         cell.classList.remove('empty', 'selected', 'valid', 'invalid');
         cell.classList.add('final-message');
+        this.appendFinalMessageLetter(letter);
       }, delay);
     });
   }
