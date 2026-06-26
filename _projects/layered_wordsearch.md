@@ -52,10 +52,10 @@ LCFEIUBW</textarea>
     <section class="lws-panel lws-game-panel">
       <div class="lws-status" data-lws-status>Build the puzzle, then drag across letters.</div>
       <div class="lws-readout" aria-live="polite">
-        <span class="lws-pill">Time: <strong data-lws-timer>0:00</strong></span>
-        <span class="lws-pill" data-lws-rank>Targets: 8 / 12 / 16 / 20 min</span>
-        <span class="lws-pill">Selected: <strong data-lws-selected-word>—</strong></span>
-        <span class="lws-pill" data-lws-validity>Waiting for selection</span>
+        <span class="lws-pill lws-timer-pill">Time: <strong data-lws-timer>0:00</strong></span>
+        <span class="lws-pill lws-rank-pill" data-lws-rank>Targets: 8 / 12 / 16 / 20 min</span>
+        <span class="lws-pill lws-selected-pill">Selected: <strong data-lws-selected-word>—</strong></span>
+        <span class="lws-pill lws-validity-pill" data-lws-validity>Waiting for selection</span>
       </div>
       <div class="lws-board-wrap">
         <div class="lws-board" data-lws-board aria-label="Layered word search board"></div>
