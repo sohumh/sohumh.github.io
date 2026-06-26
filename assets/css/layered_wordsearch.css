@@ -168,6 +168,19 @@ html[data-theme="dark"] .layered-wordsearch {
 
 .lws-cell.just-solved { animation: lws-pop 450ms ease; }
 
+.lws-cell.final-message {
+  animation: lws-final-reveal 650ms ease both;
+  background: linear-gradient(135deg, #fde68a, #f59e0b) !important;
+  color: #111827 !important;
+  border-color: rgba(245, 158, 11, 0.65);
+}
+
+@keyframes lws-final-reveal {
+  0% { transform: scale(0.92); filter: saturate(0.5); }
+  55% { transform: scale(1.14); filter: saturate(1.25); }
+  100% { transform: scale(1); filter: saturate(1); }
+}
+
 @keyframes lws-pop {
   0% { transform: scale(1); }
   45% { transform: scale(1.16); }

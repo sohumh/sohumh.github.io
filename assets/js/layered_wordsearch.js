@@ -16,6 +16,7 @@ class LayeredWordSearch {
     this.placementsInput = root.querySelector('[data-lws-placements]');
 
     this.puzzle = null;
+    this.finalMessage = 'WHALEDONEYOUBEAST';
     this.timerStartedAt = null;
     this.timerInterval = null;
     this.elapsedSeconds = 0;
@@ -117,7 +118,8 @@ class LayeredWordSearch {
       if (!raw.trim()) return [];
       return JSON.parse(raw).map((placement) => ({
         word: this.normalizeWord(placement.word),
-        path: placement.path.map(([row, col]) => ({ row, col }))
+        path: placement.path.map(([row, col]) => ({ row, col })),
+        finalLayers: placement.final_layers_top_to_bottom || []
       }));
     } catch (error) {
       throw new Error(`Could not parse placement metadata: ${error.message}`);
@@ -142,6 +144,7 @@ class LayeredWordSearch {
       this.selected = [];
       this.candidateMatch = null;
       this.resetTimer();
+      this.applyTestOneWordLeft();
       this.renderBoard();
       this.renderLegend();
       this.renderWords();
@@ -155,6 +158,25 @@ class LayeredWordSearch {
       this.setStatus(error.message, 'bad');
       this.setReadout('', 'Invalid setup', 'bad');
     }
+  }
+
+  applyTestOneWordLeft() {
+    const target = this.normalizeWord(this.root.dataset.lwsTestOneWordLeft || new URLSearchParams(window.location.search).get('lws_test_last') || '');
+    if (!target || !this.puzzle.placements.length) return;
+
+    this.puzzle.placements.forEach((placement) => {
+      if (placement.word === target) return;
+      placement.path.forEach(({ row, col }, index) => {
+        const depth = placement.finalLayers[index];
+        if (typeof depth === 'number' && this.puzzle.removed[depth]) {
+          this.puzzle.removed[depth][row][col] = true;
+        } else {
+          const visible = this.visibleAt(row, col);
+          if (visible.letter) this.puzzle.removed[visible.depth][row][col] = true;
+        }
+      });
+      this.puzzle.found.add(placement.word);
+    });
   }
 
   formatTime(seconds) {
@@ -343,6 +365,32 @@ class LayeredWordSearch {
     return letters.join('');
   }
 
+  finalMessageCells() {
+    const start = this.puzzle.rows * this.puzzle.cols - this.finalMessage.length;
+    return this.finalMessage.split('').map((letter, index) => {
+      const cellIndex = start + index;
+      return {
+        letter,
+        row: Math.floor(cellIndex / this.puzzle.cols),
+        col: cellIndex % this.puzzle.cols,
+        delay: index * 70
+      };
+    });
+  }
+
+  showFinalMessage() {
+    this.finalMessageCells().forEach(({ letter, row, col, delay }) => {
+      const cell = this.board.querySelector(`[data-row="${row}"][data-col="${col}"]`);
+      if (!cell) return;
+      window.setTimeout(() => {
+        cell.textContent = letter;
+        cell.dataset.depthLabel = '';
+        cell.classList.remove('empty', 'selected', 'valid', 'invalid');
+        cell.classList.add('final-message');
+      }, delay);
+    });
+  }
+
   pathsMatch(a, b) {
     return a.length === b.length && a.every((cell, index) => cell.row === b[index].row && cell.col === b[index].col);
   }
@@ -421,7 +469,8 @@ class LayeredWordSearch {
           this.rank.textContent = `${rank} • ${this.formatTime(this.elapsedSeconds)}`;
           this.rank.className = 'lws-pill good';
         }
-        this.setStatus(`Congrats, you solved the puzzle in ${this.formatTime(this.elapsedSeconds)} — ${rank}!`, 'good');
+        this.showFinalMessage();
+        this.setStatus(`Congrats, you solved the puzzle in ${this.formatTime(this.elapsedSeconds)} — ${rank}! Whale done, you beast!`, 'good');
         this.setReadout(match.word, 'Puzzle complete', 'good');
       } else {
         this.setStatus(`Solved ${match.word}! Letters from the next layer underneath are now visible.`, 'good');

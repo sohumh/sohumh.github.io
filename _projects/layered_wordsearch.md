@@ -8,7 +8,7 @@ category: standalone puzzles
 
 <link rel="stylesheet" href="{{ '/assets/css/layered_wordsearch.css' | relative_url }}">
 
-<div class="layered-wordsearch" data-layered-wordsearch>
+<div class="layered-wordsearch" data-layered-wordsearch data-lws-test-one-word-left="YAK">
   <p>
     Drag across the grid to find an animal. When you find a valid word, those letters disappear and reveal letters from the next layer underneath.
   </p>
