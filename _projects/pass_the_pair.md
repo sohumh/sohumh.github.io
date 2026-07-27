@@ -30,8 +30,6 @@ A quick example of one step: given `RI` and `CARED` --> `CAR·RI·ED`. Then, you
 
 ---
 
-**Only look below once you've had a real go at it.**
-
 <details>
 <summary>
 Solution:
