@@ -37,13 +37,18 @@ Solution:
 
 <br>
 
-| insert | into | word | pull | leaves |
-|---|---|---|---|---|
-| AL | SEED | SE·**AL**·ED | EA | SLED |
-| EA | BRING | B·**EA**·RING | AR | BEING |
-| AR | POLE | P·**AR**·OLE | RO | PALE |
-| RO | BANS | BA·**RO**·NS | ON | BARS |
-| ON | TIGHT | T·**ON**·IGHT | TO | NIGHT |
+<table>
+  <thead>
+    <tr><th>insert</th><th>into</th><th>word</th><th>pull</th><th>leaves</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>AL</td><td>SEED</td><td>SE·<b>AL</b>·ED</td><td>EA</td><td>SLED</td></tr>
+    <tr><td>EA</td><td>BRING</td><td>B·<b>EA</b>·RING</td><td>AR</td><td>BEING</td></tr>
+    <tr><td>AR</td><td>POLE</td><td>P·<b>AR</b>·OLE</td><td>RO</td><td>PALE</td></tr>
+    <tr><td>RO</td><td>BANS</td><td>BA·<b>RO</b>·NS</td><td>ON</td><td>BARS</td></tr>
+    <tr><td>ON</td><td>TIGHT</td><td>T·<b>ON</b>·IGHT</td><td>TO</td><td>NIGHT</td></tr>
+  </tbody>
+</table>
 
 <br>
 
